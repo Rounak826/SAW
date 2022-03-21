@@ -1,0 +1,617 @@
+.HomeContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.carousel-root {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  border-radius: 0% 0% 50% 50% / 0% 0% 7% 7%;
+  overflow: hidden;
+}
+.carousel-root img {
+  width: 100%;
+  height: 100vh;
+  border-radius: 0% 0% 50% 50% / 0% 0% 7% 7%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner-part {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #171c3a;
+  border-radius: 0% 0% 50% 50% / 0% 0% 7% 7%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+.banner-part:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-color: #171c3a;
+  z-index: -1;
+  opacity: 0.8;
+  border-radius: 0% 0% 50% 50% / 0% 0% 7% 7%;
+}
+.Row-Aligned {
+  align-items: center !important;
+}
+.banner-Text {
+  display: table;
+  width: 100%;
+  height: 880px;
+  text-align: center;
+}
+.banner-Text-inner {
+  display: table-cell;
+  vertical-align: middle;
+  align-items: center;
+}
+.banner-Text-inner h5 {
+
+  letter-spacing: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.banner-Text h1 {
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0px;
+  margin-top: 28px;
+  -webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.banner-Text h3 {
+
+  color: #fff;
+  -webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+.banner-Text .btn-1 {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 45px;
+  -webkit-transition: 0.5s;
+  transition: 0s;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background-color: #fe5c24;
+  
+}
+.btn-1:hover {
+  color: #fe5c24;
+  background-color: white;
+}
+.banner-Text-inner h4{
+  color: white;
+  margin-top: 2rem;
+
+}
+.Home-AboutUs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+}
+.Home-Product-Category-Texts {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.Home-AboutUs .Home-AboutUs-Intro {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+.Intro-Mod{
+  color: #fe5c24;
+  font-size: 1.15rem;
+}
+.Home-AboutUs-Intro-Images {
+  width: 50%;
+  background-image: url(../assets/WhoWeAre.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 80%;
+}
+
+.Home-AboutUs-Intro-Button {
+  width: fit-content;
+  background-color: #191d34;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  transition: 0s;
+}
+.Home-AboutUs-Intro-Button:hover {
+  background-color: #fe5c24;
+  color: white;
+  border: none;
+}
+.Home-OurProducts {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  background-color: #191d34;
+  color: white;
+  margin: 8rem 4rem;
+  padding: 4rem 1rem;
+  
+}
+.Home-Our-Products-Content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+.Home-OurProduct-Image{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Home-OurProduct-Image img{
+  width: 90%;
+  border-radius: 10px;
+  aspect-ratio: 5/3;
+  object-fit:cover;
+}
+.Home-Our-Products-Content h2 {
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0px;
+  margin-top: 28px;
+}
+.Home-Our-Products-Content p {
+  width: 80%;
+  text-align: justify;
+}
+.Home-OurProducts-Category-ProductCard01 {
+  color: #fe5c24;
+}
+.OurProducts-btn01 {
+  display: inline-block;
+  padding: 18px 60px;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 45px;
+  -webkit-transition: 0.5s;
+  transition: 0s;
+  background-color: #fe5c24;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.OurProducts-btn01:hover {
+  color: #fe5c24;
+  background-color: white;
+}
+.Home-AboutUs-Intro h2 {
+  width: 80%;
+  word-wrap: break-word;
+}
+.Mods {
+  color: #fe5c24;
+}
+.Home-AboutUs-Intro p {
+  width: 85%;
+  margin-bottom: 2rem;
+}
+.OurClient {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  margin: 4rem 2rem;
+  gap: 2rem;
+
+}
+
+.IndustryCard {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+.IndustryCard img{
+  width: 90%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.IndustryCard h5{
+     margin-top: 1rem;
+     font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    align-items: center;
+    transition: 0.3s;
+}
+.IndustryCard h5:hover{
+ color: #fe5c24;
+}
+.IndustryCard h5::after{
+  position: absolute;
+  content: "";
+  left: 30%;
+  bottom: -16px;
+  width: 80px;
+  height: 3px;
+  background-color: #fe5c24;
+  align-items: center;
+}
+.OurClient-Parent{
+  width: 100%;
+  display: grid;
+   grid-template-columns: 25% 25% 25%;
+   justify-content: center;
+   grid-row-gap: 2rem;
+}
+.Achievement-Parent{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.Achievements{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem;
+  gap: 2rem;
+}
+.Achievement-Card{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding: 38px 20px 43px;
+}
+.Achievement-Card img{
+  width: 20%;
+}
+.Achievement-Card h3{
+  margin-top: 1rem;
+    position: relative;
+    text-transform: uppercase;
+    align-items: center;
+}
+.Achievement-Card h3::after{
+  position: absolute;
+  content: "";
+  left: 30%;
+  bottom: -16px;
+  width: 80px;
+  height: 2px;
+  background-color: #fe5c24;
+  align-items: center;
+}
+.Achievement-Card p{
+  width: 60%;
+    line-height: 1.875;
+    color: rgb(0, 0, 0);
+    -webkit-transition: 1s;
+    transition: 1s;
+    text-align: center;
+}
+.WhatWeDeal{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Image-Link{
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem;
+  justify-content: space-between;
+  gap: 2rem;
+  transition: 0.3;
+}
+.Image-Link:hover{
+  box-shadow: 0 4px 20px 0 rgba( 31, 38, 135, 0.1 );
+}
+.Deal-Header{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.Deal-Products-Images{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+.Deal-Products-Images>:first-child{
+  margin-left: 2rem;
+}
+.Deal-Products-Images>:last-child{
+margin-right: 2rem;
+}
+.Deal-Products-Images img{
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+ .banner-part {
+    background-size: cover;
+    height: 650px;
+}
+.Col-Aligned{
+  flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+.banner-part .banner-Text {
+  height: 650px;
+}
+.banner-part .banner-Text h1 {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+.Home-AboutUs-Intro h2{
+   width: 60%;
+}
+}
+@media (max-width:768px){
+  .Home-AboutUs{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    padding: 0%;
+  }
+  .Home-AboutUs .Home-AboutUs-Intro{
+    width: 60%;
+  }
+  .Home-AboutUs-Intro h2{
+    width: 100%;
+    word-wrap: none;
+  }
+  .Home-AboutUs-Intro p{
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .Home-AboutUs-Intro-Button{
+    width: 50%;
+  }
+  .Home-AboutUs-Intro-Images{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Home-AboutUs-Intro-Images img {
+    width: 80%;
+    margin-top: 1rem;
+  }
+  .Home-Our-Products-Content{
+    gap: 2%;
+  }
+  .Home-Our-Products-Content h2{
+    width: 100%;
+    font-size: 2.5rem;
+    margin-top: 0%;
+    margin-bottom: 2rem;
+  }
+  .Home-Our-Products-Content p{
+    width: 100%;
+
+  }
+  .Home-OurProducts-Category-ProductCard01{
+    width: 75%;
+  }
+  .Home-OurProducts-Category-ProductCard01 img{
+    width: 55%;
+  }
+  .Home-OurProducts-Category-ProductCard01 p{
+    width: 100%;
+  }
+  .Achievement-Card img{
+    width: 30%;
+  }
+
+  .Achievement-Card p{
+    width: 100%;
+  }
+
+}
+@media (max-width: 576px){
+  .banner-part {
+    height: 650px;
+    background-color: #f0eed4;
+  }
+  .banner-part .banner-Text {
+    padding-top: 0px;
+    height: 650px;
+  }
+  .banner-part .banner-Text h1 {
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+}
+@media (max-width: 425px){
+  .Home-AboutUs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+  }
+  .Home-AboutUs .Home-AboutUs-Intro{
+    width: 100%;
+  }
+  .Home-AboutUs-Intro h2{
+
+    width: 100%;
+    text-align: center;
+  }
+  .Home-AboutUs-Intro p{
+    width: 100%;
+  }
+  .Home-AboutUs-Intro-Button{
+    width: 100%;
+  }
+  .Home-AboutUs-Intro-Images{
+    width: 80%;
+  }
+  .Home-AboutUs-Intro-Images{
+    width: 90%;
+  }
+  .Home-OurProducts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .Home-Our-Products-Content h2{
+    width: 100%;
+    padding: 1rem;
+  }
+  .Home-Our-Products-Content p{
+    width: 90%;
+  }
+  .Achievement-Parent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .Achievement-Card{
+    width: 100%;
+  }
+  .Home-Our-Products-Content{
+    width: 100%;
+  }
+  .Home-OurProducts-Category-ProductCard01{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .Home-OurProducts-Category-ProductCard01 img{
+    width: 80%;
+    padding: 1rem;
+  }
+  .Home-OurProducts-Category-ProductCard01 p{
+    width: 95%;
+  }
+  .OurClient-Parent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    grid-row-gap: 2rem;
+  }
+}
+@media (max-width:330px) {
+  .Home-OurProducts-Category-ProductCard01 p{
+    width: 90%;
+  }
+}
