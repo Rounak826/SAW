@@ -33,7 +33,7 @@ export const Footer = () => {
             <h3>Contact Us:</h3>
             <div className="column">
               
-            <div className="Row">
+            <div className="row">
             <a
               href="https://www.facebook.com/areradentalclinic/"
               target={"_blank"}
@@ -58,7 +58,7 @@ export const Footer = () => {
             </a>
             </div>
            
-            <div className="col">
+            <div className="Col">
               <a href="tel:+91 9425152102"><PhoneCall />+91 9425152102</a>
               <a href="tel:+91 9893519860 "><PhoneCall />+91 9893519860</a>
               <a href="tel:+91 9425385997"><PhoneCall />+91 9425385997</a>

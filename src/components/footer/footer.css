@@ -38,6 +38,12 @@ gap: 2rem;
   gap: 5rem; 
 
 }
+.Footer .row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+}
 .quicklinks{
   width: fit-content;
   display: flex;
@@ -103,41 +109,36 @@ margin-top: 0.5rem;
 .contact .row{
   justify-content: flex-start;
 }
-.contact .col{
+.contact .Col{
+  width: 100%;
   margin-top: 1rem;
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
 }
-@media only screen and (max-width: 900px){
-  .Footer{
+@media only screen and (max-width: 430px){
+  .contact{
     width: 100%;
+  }
+  .contact h3{
+    text-align: center;
+  }
+  .Footer .row{
+    justify-content: center;
     align-items: center;
   }
-  .Row {
+  .Footer .Row{
+    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .logo {
+  .logo{
+    width: 50%;
+  }
+  .contact .Col{
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .quicklinks{
-    width: 90%;
-  }
-  .contact{
-    width: 100%;
-    text-align: center;
-  }
-    .contact .col{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .contact .row{
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
 }
