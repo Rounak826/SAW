@@ -204,7 +204,7 @@
   .ContactUs-Card-01{
     width: 90%;
     aspect-ratio:3/1;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .ContactUs .ContactUs-Form .Form .ContactUs-Button{
     width: 50%;
@@ -231,10 +231,11 @@
     width: 100%;
   }
   .ContactUs .ContactUs-Form .Form .ContactUs-Button{
-    width: 100%;
+    width: 95%;
   }
   .ContactUs .ContactUs-Form .Form h1{
     width: 100%;
     margin: 0%;
+    margin-bottom: 1rem;
   }
 }
