@@ -19,14 +19,6 @@ export default function AboutUs() {
             <div className="bread-inner">
               <div className="bread-crumb-inner">
                 <h2>ABOUT US</h2>
-                <p>
-                  {" "}
-                  <a href="">
-                    {" "}
-                    <span className="Mods">Home </span>{" "}
-                  </a>
-                  . About Us{" "}
-                </p>
               </div>
             </div>
           </div>
@@ -134,9 +126,7 @@ export default function AboutUs() {
 
           <p>
           We always & strictly follow the Quality Control Parameters as well defined in the ISO 9001:2000 system, right from Sourcing of raw materials up to production of finished goods. Special attention has always been given in sourcing of other accessories related to completion of turn-key projects.
-          </p>
-          <p>Apart from this we are also manufacturing & Testing our products as per Indian Standards(IS) & ASTM Procedures. This Further certify ours as a Quality manufacturer</p>
-          <p>Behind each one of our quality products and services there is a dedicated team of highly trained engineers and technologist who ensure that we consistently provide the best is to offer.</p>
+          Apart from this we are also manufacturing & Testing our products as per Indian Standards(IS) & ASTM Procedures. This Further certify ours as a Quality manufacturer. Behind each one of our quality products and services there is a dedicated team of highly trained engineers and technologist who ensure that we consistently provide the best is to offer.</p>
           <p>Our Quality Policy, Commits to comply with customer requirements and applicable standards as specified ISO 9001:2000.</p>
         </div>
         <div className="Iso-Logo">

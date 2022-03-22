@@ -23,7 +23,7 @@ const callback = function(index){
 }
   return(<div className='gallery'>
             <h1 className='head'>Gallery</h1>
-           <div className='cardiv'><Carousel slides={slides} autoplay={false} interval={1000} onSlideChange={callback} arrows={true}/></div>
+          <Carousel slides={slides} autoplay={false} interval={1000} onSlideChange={callback} arrows={true}/>
     
   </div>)
 

@@ -7,14 +7,16 @@
 .gallery img{
     background-color: blanchedalmond;
     width: 100%;
-    height: 60vh;
     border-radius: 20px;
-}
-.gallery .cardiv{
-    width: 100%;
-    
 }
 .gallery .head{
     margin: 25px;
     text-align: center;
+}
+@media only screen and (max-width: 768px){
+    .gallery{
+        justify-content: center;
+        margin-top: 0;
+    }
+
 }

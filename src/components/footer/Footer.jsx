@@ -1,9 +1,34 @@
 import React from "react";
 import "./footer.css";
 import logo from "../assets/logo.png";
+import iso from "../assets/isologo.png";
 import { Link } from "react-router-dom";
+import LinkDropDown from "../Link-Dropdown/LinkDropDown";
 import { Facebook, Instagram, Mail, MapPin, PhoneCall, Youtube } from "react-feather";
 export const Footer = () => {
+  const Products = [
+    {
+      link: "/AcidProofBrick",
+      title: "Acid Proof Brick",
+    },
+    {
+      link: "/AluminaBrick",
+      title: "Alumina Brick",
+    },
+    {
+      link: "/FireProofBrick",
+      title: "Fire Proof Brick",
+    },
+    {
+      link: "/InsulationBrick",
+      title: "Insulation Brick",
+    },
+    {
+      link: "/FireClay",
+      title: "Fire Clay",
+    },
+    
+  ];
   return (
     <div className="Footer">
       <footer>
@@ -19,10 +44,13 @@ export const Footer = () => {
                 <Link to={"/"}>Home</Link>
               </li>
               <li>
-                <Link to={"/AboutUs"}>About Us</Link>
+              <LinkDropDown label={"Our Products"} links={Products} />
               </li>
               <li>
-                <Link to={"/ContactUs"}>Contact Us</Link>
+                <Link to={"/Gallery"}>Gallery</Link>
+              </li>
+              <li>
+                <Link to={"/AboutUs"}>About Us</Link>
               </li>
               <li>
                 <Link to={"/ContactUs"}>Contact Us</Link>
@@ -33,41 +61,21 @@ export const Footer = () => {
             <h3>Contact Us:</h3>
             <div className="column">
               
-            <div className="row">
-            <a
-              href="https://www.facebook.com/areradentalclinic/"
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              <Facebook />
-            </a>
-
-            <a
-              href="https://youtube.com/c/drswapniljain18"
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              <Youtube />
-            </a>
-            <a
-              href="https://instagram.com/arera_dental_care?utm_medium=copy_link"
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              <Instagram />
-            </a>
-            </div>
            
             <div className="Col">
               <a href="tel:+91 9425152102"><PhoneCall />+91 9425152102</a>
               <a href="tel:+91 9893519860 "><PhoneCall />+91 9893519860</a>
               <a href="tel:+91 9425385997"><PhoneCall />+91 9425385997</a>
-              <a href="satpuraref1@gmail.com"><Mail />satpuraref1@gmail.com</a>
+              <a href="mailto:satpuraref1@gmail.com"><Mail />satpuraref1@gmail.com</a>
               <p className="address">
-                <MapPin />  Deotal Opposite Ramyan Mandir, Nagpur Road, Jabalpur-482002, Madhya Pradesh, India
+                <MapPin />  Nagpur Road, Opp. Devatal Ramayan Mandir, P.O. GARHA, Jabalpur 482003. 
               </p>
             </div>
             </div>
+          </div>
+          <div className="certificate">
+            <img src={iso} alt="" />
+            <p>GST No: 23ABXPN6809Q1ZN</p>
           </div>
         </div>
         <hr />

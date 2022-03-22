@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin: 5rem 0;
+    margin: 1rem 0;
 }
 .productVariants .head{
     width: 100%;
@@ -17,7 +17,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
-    padding: 5rem;
+    padding: 2rem 5rem;
 }
 .productVariants .Card{
     display: flex;
@@ -118,5 +118,9 @@
     .productVariants .wrapper{
         padding: 0;
         align-items: center;
+    }
+    .productVariants .wrapper{
+        align-items: center;
+        justify-content: center;
     }
 }

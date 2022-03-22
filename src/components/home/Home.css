@@ -20,6 +20,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
 }
 .banner-part {
   width: 100%;
@@ -52,7 +53,6 @@
 .banner-Text {
   display: table;
   width: 100%;
-  height: 880px;
   text-align: center;
 }
 .banner-Text-inner {
@@ -61,6 +61,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding:0 1rem;
 }
 .banner-Text-inner h5 {
 
@@ -105,7 +106,7 @@
 }
 
 .banner-Text h3 {
-
+  margin-top: 1rem;
   color: #fff;
   -webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -429,7 +430,7 @@
   align-items: center;
 }
 .Achievement-Card p{
-  width: 60%;
+  width: 80%;
     line-height: 1.875;
     color: rgb(0, 0, 0);
     -webkit-transition: 1s;
@@ -485,16 +486,13 @@ margin-right: 2rem;
 @media only screen and (min-width: 992px) and (max-width: 1200px){
   .banner-part {
      background-size: cover;
-     height: 650px;
  }
  .Col-Aligned{
   display: flex;
   flex-direction: column;
   align-items: center;
  }
- .banner-part .banner-Text {
-   height: 650px;
- }
+
  .banner-part .banner-Text h1 {
    margin-bottom: 15px;
    line-height: 1.4;
@@ -546,10 +544,13 @@ margin-right: 2rem;
  .Home-AboutUs .Home-AboutUs-Intro{
    width: 100%;
  }
+ .OurClient-Parent{
+   grid-template-columns: 40% 40%;
+ }
 }
  @media (max-width:780px){
    .Home-Our-Products-Content{
-     padding-left: 2rem;
+     padding-left: 0rem;
    }
    .Deal-Products-Images>:first-child{
      margin: 0;
@@ -626,21 +627,58 @@ margin-right: 2rem;
    }
 
  }
+ @media (max-width: 768px){
+  .Home-OurProducts{
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .Home-Our-Products-Content{
+    width: 90%;
+  }
+  .Home-OurProduct-Image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .OurProducts-btn01{
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  .Achievement-Parent{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .Achievement-Card{
+    width: 50%;
+  }
+ }
+
  @media (max-width: 576px){
    .banner-part {
-     height: 650px;
      background-color: #f0eed4;
-   }
-   .banner-part .banner-Text {
-     padding-top: 0px;
-     height: 650px;
    }
    .banner-part .banner-Text h1 {
      margin-bottom: 15px;
      line-height: 1.3;
  }
+ .OurClient-Parent{
+  grid-template-columns: 60%;
+}
  
  }
+ @media (max-width:476px){
+  .banner-Text-inner{
+    padding: 0.8rem 1rem;
+    margin-top: 5rem;
+  }
+  .banner-Text-inner h5{
+    margin-bottom: 0rem;
+  }
+}
  @media (max-width: 430px){
    .Home-AboutUs{
      width: 100%;
@@ -682,7 +720,7 @@ margin-right: 2rem;
      padding: 1rem;
    }
    .Home-Our-Products-Content p{
-     width: 90%;
+     width: 100%;
    }
    .Achievement-Parent{
      width: 100%;

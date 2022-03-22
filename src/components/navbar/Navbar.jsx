@@ -28,7 +28,7 @@ export default function Navbar() {
       title: "Fire Clay",
     },
   ];
-
+  const location =useLocation();
   const [showMenu, setShowMenu] = useState(false);
   const [scrollPosition, setPosition] = useState(0);
   useLayoutEffect(() => {
@@ -44,6 +44,10 @@ export default function Navbar() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  useEffect(() => {
+    console.log(location.pathname);
+  }, [location]);
   return (
     <>
       <nav className={`${scrollPosition > 50 ? "solid" : "transparent"}`}>
@@ -52,16 +56,16 @@ export default function Navbar() {
         </div>
 
         <div className="links">
-          <Link to="/">Home</Link>
-          <LinkDropDown label={"Our Products"} links={Products} />
-          <Link to={'/Gallery'} >Gallery</Link>
-          <Link to="/AboutUs">About Us</Link>
-          <Link to="/ContactUs">Contact Us</Link>
+          <Link to="/" style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':""}}>Home</Link>
+          <Link  style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':""}} to="/AboutUs">About Us</Link>
+          <LinkDropDown style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':""}} label={"Our Products"} links={Products} />
+          <Link style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':""}} to={'/Gallery'} >Gallery</Link>
+          <Link style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':"#fff"}} to="/ContactUs">Contact Us</Link>
         </div>
         <div className="info">
           <div className="col">
-            <a href="tel:+919425152102"><PhoneCall />9425152102</a>
-            <a href="tel:+919893519860"><PhoneCall />9893519860</a>
+            <a style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':""}} href="tel:+919425152102"><PhoneCall />9425152102</a>
+            <a style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':""}} href="tel:+919893519860"><PhoneCall />9893519860</a>
 
           </div>
           <div className="col">
@@ -103,9 +107,9 @@ export default function Navbar() {
             </div>
             <div className="links">
           <Link to="/">Home</Link>
+          <Link to="/AboutUs">About Us</Link>
           <LinkDropDown label={"Our Products"} links={Products} />
           <Link to={'/Gallery'} >Gallery</Link>
-          <Link to="/AboutUs">About Us</Link>
           <Link to="/ContactUs">Contact Us</Link>
         </div>
         <div className="info">

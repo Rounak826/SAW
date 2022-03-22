@@ -87,7 +87,7 @@ export default function Home() {
                   Since <span className="Mods">2000</span>
                 </h5>
                 <h1> Satpura Acid Ware & Stone Ware Pipes</h1>
-                <h5>JABALPUR ,MADHYA PRADESH</h5>
+                <h5>JABALPUR, MADHYA PRADESH</h5>
                 <h3>
                   Manufacturing all types of Refactories, A.R bricks & Stone
                   Ware Pipes
@@ -195,7 +195,7 @@ export default function Home() {
       </div>
       <div className="WhatWeDeal">
         <div className="Deal-Header">
-          <h2>We Deal In</h2>
+          <h2>We Deal With</h2>
         </div>
         <div className="Deal-Products-Images">
           <div className="Image-Link">
@@ -231,7 +231,7 @@ export default function Home() {
         </div>
       </div>
       <div className="OurClient">
-        <h2>OUR INDUSTRIES SERVED</h2>
+        <h2>INDUSTRIES WE SERVE</h2>
         <div className="OurClient-Parent">
           {Industrylist.map((Industry, index) => (
             <IndustryCard key={index} {...Industry} />

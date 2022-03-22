@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./ContactUs.css";
 import FeatherIcon from "feather-icons-react";
 import { useLocation } from "react-router-dom";
 export default function ContactUs() {
   const location = useLocation();
+  const [loading,setLoading] = useState(false);
   const HandleSubmit = (e) => {
+    setLoading(true);
     e.preventDefault();
     const scriptURL = `https://v1.nocodeapi.com/tejas001/google_sheets/xhkmsXbsrKKAgzxy?tabId=Sheet1`;
     var myHeaders = new Headers();
@@ -12,7 +14,7 @@ export default function ContactUs() {
     const form = document.forms['ContactUs']
     let data = new FormData(form)
     let row = [
-      [data.get("Name"), data.get("Email"),data.get("Product"), data.get("Number"), data.get("Query")]
+      [data.get("Name"), data.get("Email"),data.get("Number"),data.get("Product"), data.get("Query")]
     ]
 
     console.log(row)
@@ -27,8 +29,16 @@ export default function ContactUs() {
     //console.log(data.get("name"));
     fetch(scriptURL, requestOptions)
       .then(response => response.text())
-      .then(result => {console.log(result)})
-      .catch(error => console.log('error', error));
+      .then(result => {
+        console.log(result)
+        setLoading(false);
+        alert('Your Query Was Sent Successfully!');
+      })
+      .catch(error => {
+        setLoading(false);
+        alert('Failed to send your query.!');
+        console.log('error', error)
+      });
   }
   useEffect(() => {
     console.log(location.state);
@@ -45,14 +55,6 @@ export default function ContactUs() {
             <div className="bread-inner">
               <div className="bread-crumb-inner">
                 <h2>CONTACT US</h2>
-                <p>
-                  {" "}
-                  <a href="">
-                    {" "}
-                    <span className="Mods">Home </span>{" "}
-                  </a>
-                  . Contact Us{" "}
-                </p>
               </div>
             </div>
           </div>
@@ -63,12 +65,11 @@ export default function ContactUs() {
           <div className="ContactUs-Card-01">
             <h4>
               {" "}
-              <FeatherIcon icon="map-pin" /> Satpura Acid Ware
+              <FeatherIcon icon="map-pin" /> SATPURA ACID WARE & STONE WARE PIPES
             </h4>
             <p>
               {" "}
-              Deotal Opposite Ramyan Mandir, Nagpur Road, Jabalpur-482002,
-              Madhya Pradesh, India
+              Nagpur Road, Opp. Devatal Ramayan Mandir, P.O. GARHA, Jabalpur 482003.
             </p>
           </div>
           <div className="ContactUs-Card-01">
@@ -96,9 +97,9 @@ export default function ContactUs() {
           <div className="Form">
             <h1>Get in Touch </h1>
             <form name="ContactUs" onSubmit={HandleSubmit}>
-              <input type="text" placeholder="Your Name..." name="Name" />
-              <input type="text" placeholder="Your Email Id..." name="Email" />
-              <input type="text" placeholder="Your Number..." name="Number" />
+              <input type="text" placeholder="Your Name..." name="Name" required />
+              <input type="email" placeholder="Your Email Id..." name="Email"  required />
+              <input type="text" placeholder="Your Number..." name="Number" required />
               <input type="text" value={location.state&&location.state.product} placeholder="Product name , Dimension" name="Product" />
               <textarea
                 name="Query"
@@ -106,8 +107,9 @@ export default function ContactUs() {
                 cols="100"
                 rows="6"
                 placeholder="Message / Details Of Product / Quantity"
+                required
               ></textarea>
-              <button type="submit" className="ContactUs-Button">SUBMIT NOW</button>
+              <button type="submit" className="ContactUs-Button">{loading?"Sending...":"SUBMIT NOW"}</button>
             </form>
           </div>
         </div>

@@ -35,7 +35,7 @@ gap: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 5rem; 
+  gap: 6%;
 
 }
 .Footer .row{
@@ -115,7 +115,33 @@ margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
 }
-@media only screen and (max-width: 430px){
+.Footer .certificate{
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #dfdfdf;
+  display: flex;
+  flex-direction: column;
+
+}
+.Footer .certificate p{
+  text-align: center;
+  word-wrap: break-word;
+}
+.Footer .certificate img{
+  width: 100%;
+}
+@media only screen and (max-width: 881px){
+  .Footer .Row{
+    padding: 0 1rem;
+    justify-content: space-between;
+  }
+  .Footer .certificate p{
+    word-break: break-all;
+  }
+}
+@media only screen and (max-width: 768px){
   .contact{
     width: 100%;
   }
@@ -131,14 +157,24 @@ margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
   }
   .logo{
     width: 50%;
   }
   .contact .Col{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .contact .address{
+    width: 80%;
+    text-align: center;
+  }
+  .Footer .certificate{
+    width: 80%;
+    max-width: 180px;
+    margin-top: 1rem;
   }
 }

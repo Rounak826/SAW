@@ -16,7 +16,6 @@ export default function AcidProofBrick() {
     <div className="AcidProofBrick">
       <div className="BannerPart">
         <div className="row-Align">
-          <div className="col-Align">
             <div className="banner-text">
               <div className="Banner-Text-Inner">
                 <h1>
@@ -24,7 +23,7 @@ export default function AcidProofBrick() {
                 </h1>
               </div>
             </div>
-          </div>
+          
         </div>
       </div>
       <ProductVariants data={AcidBrick}/>
@@ -33,7 +32,7 @@ export default function AcidProofBrick() {
           <h1>Acid Resistant Bricks</h1>
           <p>
             Acid brick or acid resistant brick is a specially made form of
-            masonry brick that is chemically resistant and thermally durable.[1]
+            masonry brick that is chemically resistant and thermally durable.
             Acid brick is created from high silica shale and fired at higher
             temperatures than those used for conventional brick. Some
             manufacturers create the brick by baking it for over a week. It has
@@ -51,7 +50,7 @@ export default function AcidProofBrick() {
         </div>
       </div>
       <div className="WaterResistant">
-        <h1>Water Absorption</h1>
+        <h2>Water Absorption</h2>
         <div className="WaterResistent-Row">
           <div className="WaterResistant-Row-Card">
             <div className="WaterResistant-Row-Card-Content">
