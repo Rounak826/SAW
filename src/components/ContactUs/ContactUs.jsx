@@ -81,7 +81,7 @@ export default function ContactUs() {
           <div className="ContactUs-Card-01">
             <iframe
               title="My Map"
-              src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d58691.43768793463!2d79.89150143773493!3d23.16235712977371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d23.16243!2d79.9266!5e0!3m2!1sen!2sin!4v1647258836741!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.37798705876!2d79.89587191497021!3d23.156400584885457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981b1f4c10dc59b%3A0x9477a0a53061a0b1!2sRamayan%20Mandir!5e0!3m2!1sen!2sin!4v1647945134305!5m2!1sen!2sin" 
               allowFullScreen=""
               loading="lazy"
             ></iframe>
