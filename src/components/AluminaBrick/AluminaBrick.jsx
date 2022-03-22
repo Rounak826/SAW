@@ -1,5 +1,8 @@
 import React from 'react'
 import './AluminaBrick.css'
+import AluminaCard from '../icons/AluminaCard.png'
+import ProductVariants from "../ProductVariants/ProductVariants";
+import {HighAluminaBrick} from "../../Data";
 export default function AluminaBrick() {
   return (
     <div className='AluminaBrick'>
@@ -16,27 +19,7 @@ export default function AluminaBrick() {
           </div>
         </div>
       </div>
-      <div className="Dimensions">
-        <h1>Available Dimensions</h1>
-        <div className="row-Dimension">
-          <p>
-            A.Ṛ <span className="Mods-2">230X115X75</span> mm CLASS{" "}
-            <span className="Mods-2">I</span>{" "}
-          </p>
-          <p>
-            A.Ṛ <span className="Mods-2">230X115X38</span> mm CLASS{" "}
-            <span className="Mods-2">I</span>{" "}
-          </p>
-          <p>
-            A.Ṛ <span className="Mods-2">230X115X75</span> mm CLASS{" "}
-            <span className="Mods-2">II</span>{" "}
-          </p>
-          <p>
-            A.Ṛ <span className="Mods-2">230X115X38</span> mm CLASS{" "}
-            <span className="Mods-2">II</span>{" "}
-          </p>
-        </div>
-      </div>
+      <ProductVariants data={HighAluminaBrick}/>
       <div className="Acid-Proof-Brick-Introduction">
         <div className="Introduction-of-Brick">
           <h1>High Alumina Brick</h1>
@@ -45,12 +28,7 @@ export default function AluminaBrick() {
           </p>
         </div>
         <div className="KeyFeaturesCard">
-          <h4>Our Products</h4>
-          <p>IS 8 </p>
-          <p>40 % Alumina</p>
-          <p>60 % Alumina</p>
-          <p>70 % Alumina</p>
-          <p>And other High Grade Refractories</p>
+          <img src={AluminaCard} alt="" />
         </div>
       </div>
       <div className="WaterResistant">

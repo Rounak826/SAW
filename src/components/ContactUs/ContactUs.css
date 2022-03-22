@@ -95,6 +95,11 @@
   margin: 2rem;
   align-items: center;
 }
+.Form form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
 .ContactUs-Form input {
   width: 90%;
   display: flex;
@@ -103,13 +108,11 @@
   padding: 1rem;
   border: 2px solid rgb(160, 158, 158);
   border-radius: 10px;
-  margin: 1rem;
 
 }
 .ContactUs-Form textarea {
   width: 90%;
   border-radius: 10px;
-  margin: 1rem;
   padding: 1.5rem;
   resize: none;
 }
@@ -173,6 +176,23 @@
       padding: 1rem;
   }
 }
+@media only screen and (max-width: 780px){
+  .ContactUs-Cards{
+    width: 100%;
+    flex-direction: column;
+    column-gap: 1rem;
+    margin: 0%;
+    align-items: center;
+  }
+  .ContactUs-Card-01{
+    width: 90%;
+    aspect-ratio:3/1;
+    margin-top: 2rem;
+  }
+  .ContactUs .ContactUs-Form .Form .ContactUs-Button{
+    width: 50%;
+  }
+}
 @media only screen and (max-width: 425px) {
   
   .ContactUs-Cards{
@@ -197,5 +217,6 @@
   }
   .ContactUs .ContactUs-Form .Form h1{
     width: 100%;
+    margin: 0%;
   }
 }

@@ -37,17 +37,11 @@ export default function AboutUs() {
           <h1>
             Who We <span className="Mods">Are</span> ?
           </h1>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
-          neque animi quidem odio explicabo omnis nulla veniam a? Sapiente,
-          libero cupiditate porro vero modi aliquid odio repellendus asperiores
-          molestias quos. Lorem ipsum dolor, sit amet consectetur adipisicing
-          elit. Modi numquam fugiat hic tenetur eum saepe harum sint dolorem
-          eligendi ratione officiis perferendis sunt blanditiis, quasi eos aut.
-          Nisi, repudiandae inventore. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Voluptatibus, necessitatibus ipsa. Incidunt harum
-          nesciunt, adipisci ullam reiciendis vero, quae iusto officia
-          reprehenderit, optio fuga repudiandae velit voluptatem explicabo rem
-          voluptates!
+          We are Satpura acid ware also well known as SAW Jabalbur, 
+          Madhya Pradesh is in  business of bricks manufacturing 
+          since more than 22 years.<br/>
+          We are the leading manufacturer of
+          A.R Bricks, All types of refractories and Stone Ware Pipes
         </p>
 
         <div className="AboutUs-SubImage">
@@ -63,8 +57,10 @@ export default function AboutUs() {
             <div className="Feature-Card-Content">
               <h3>Our Bricks Perform Well Left Exposed</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                ipsum dolor sit amet consectetur adipisicing elit.
+              Bricks properties like compresive strength, water absorption,
+                efflorescence, and warpage are carefully monitored to deliver
+                the best qualities that make our brick capable of performing better
+                when left exposed.
               </p>
             </div>
           </div>
@@ -75,8 +71,7 @@ export default function AboutUs() {
             <div className="Feature-Card-Content">
               <h3>Modularity</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                ipsum dolor sit amet consectetur adipisicing elit.
+              The modular size of bricks offers endless design options.
               </p>
             </div>
           </div>
@@ -87,8 +82,8 @@ export default function AboutUs() {
             <div className="Feature-Card-Content">
               <h3>Forget About Maintenance</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                ipsum dolor sit amet consectetur adipisicing elit.
+              Bricks and related products never fade, peel or rot. Therefore,
+                 you will never need to paint and will hardly ever have to clean.
               </p>
             </div>
           </div>
@@ -101,8 +96,8 @@ export default function AboutUs() {
             <div className="Feature-Card-Content">
               <h3>TimeLess Beauty</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                ipsum dolor sit amet consectetur adipisicing elit.
+              Bricks products never age. They last through centuries like the aqueducts in Rome.
+               Brick is the material of past present & future
               </p>
             </div>
           </div>
@@ -113,8 +108,8 @@ export default function AboutUs() {
             <div className="Feature-Card-Content">
               <h3>Time Saving</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                ipsum dolor sit amet consectetur adipisicing elit.
+              Bricks needs not to be plastered after installation.They can be left exposed 
+                which in turn not only saves plaster,  and paint costs but also time.
               </p>
             </div>
           </div>
@@ -125,8 +120,9 @@ export default function AboutUs() {
             <div className="Feature-Card-Content">
               <h3>No Colour Pigment</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                ipsum dolor sit amet consectetur adipisicing elit.
+              The colors in bricks and related products are achieved by mixing clays and firing the 
+               resulting mixture at a certain temparature. There are no artificial colors or pigments added to 
+               get the required colors.  
               </p>
             </div>
           </div>

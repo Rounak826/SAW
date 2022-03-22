@@ -56,9 +56,11 @@
   text-align: center;
 }
 .banner-Text-inner {
-  display: table-cell;
-  vertical-align: middle;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .banner-Text-inner h5 {
 
@@ -178,15 +180,55 @@
   color: #fe5c24;
   font-size: 1.15rem;
 }
-.Home-AboutUs-Intro-Images {
+.ProductContainer{
   width: 50%;
-  background-image: url(../assets/WhoWeAre.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
-
+.ProductContainer{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+.ProductContainer .counter{
+  width: 45%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #171c3a;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  gap: 2rem; 
+}
+.ProductContainer .counter h3{
+  width: 100%;
+}
+.ProductContainer .counter h5{
+  width: 100%;
+}
+.ProductContainer .counter .image{
+  width: 45%;
+  min-width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ProductContainer .counter .image img{
+  width: 100%;
+}
+.ProductContainer .counter .info{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: flex-start;
+  text-align: left;
+}
 .Home-AboutUs-Intro-Button {
   width: fit-content;
   background-color: #191d34;
@@ -227,9 +269,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
-  gap: 2rem;
+  gap: 0.5rem;
+  padding-left: 5rem;
 }
 .Home-OurProduct-Image{
   width: 50%;
@@ -253,6 +296,7 @@
 .Home-Our-Products-Content p {
   width: 80%;
   text-align: justify;
+  margin-bottom: 0.5rem;
 }
 .Home-OurProducts-Category-ProductCard01 {
   color: #fe5c24;
@@ -423,7 +467,8 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1.5rem;
   margin-bottom: 6rem;
 }
 .Deal-Products-Images>:first-child{
@@ -438,180 +483,294 @@ margin-right: 2rem;
   aspect-ratio: 4/3;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px){
- .banner-part {
-    background-size: cover;
-    height: 650px;
-}
-.Col-Aligned{
-  flex: 0 0 83.333333%;
-    max-width: 83.333333%;
-}
-.banner-part .banner-Text {
-  height: 650px;
-}
-.banner-part .banner-Text h1 {
-  margin-bottom: 15px;
-  line-height: 1.4;
-}
-.Home-AboutUs-Intro h2{
-   width: 60%;
-}
-}
-@media (max-width:768px){
-  .Home-AboutUs{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin: 0%;
-    padding: 0%;
-  }
-  .Home-AboutUs .Home-AboutUs-Intro{
-    width: 60%;
-  }
-  .Home-AboutUs-Intro h2{
-    width: 100%;
-    word-wrap: none;
-  }
-  .Home-AboutUs-Intro p{
-    width: 100%;
-    margin-top: 2rem;
-  }
-  .Home-AboutUs-Intro-Button{
-    width: 50%;
-  }
-  .Home-AboutUs-Intro-Images{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .Home-AboutUs-Intro-Images img {
-    width: 80%;
-    margin-top: 1rem;
-  }
-  .Home-Our-Products-Content{
-    gap: 2%;
-  }
-  .Home-Our-Products-Content h2{
-    width: 100%;
-    font-size: 2.5rem;
-    margin-top: 0%;
-    margin-bottom: 2rem;
-  }
-  .Home-Our-Products-Content p{
-    width: 100%;
-
-  }
-  .Home-OurProducts-Category-ProductCard01{
-    width: 75%;
-  }
-  .Home-OurProducts-Category-ProductCard01 img{
-    width: 55%;
-  }
-  .Home-OurProducts-Category-ProductCard01 p{
-    width: 100%;
-  }
-  .Achievement-Card img{
-    width: 30%;
-  }
-
-  .Achievement-Card p{
-    width: 100%;
-  }
-
-}
-@media (max-width: 576px){
   .banner-part {
-    height: 650px;
-    background-color: #f0eed4;
-  }
-  .banner-part .banner-Text {
-    padding-top: 0px;
-    height: 650px;
-  }
-  .banner-part .banner-Text h1 {
-    margin-bottom: 15px;
-    line-height: 1.3;
-}
-
-}
-@media (max-width: 425px){
-  .Home-AboutUs{
+     background-size: cover;
+     height: 650px;
+ }
+ .Col-Aligned{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .banner-part .banner-Text {
+   height: 650px;
+ }
+ .banner-part .banner-Text h1 {
+   margin-bottom: 15px;
+   line-height: 1.4;
+ }
+ .Home-AboutUs-Intro h2{
     width: 100%;
+    
+ }
+ .Image-Link{
+   width: 20%;
+ }
+ .Deal-Products-Images{
+   gap: 2rem;
+ }
+ .Home-AboutUs .Home-AboutUs-Intro{
+   width: 60%;
+   gap: 1.5rem;
+ }
+ .banner-Text-inner{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ }
+ @media (max-width:1024px){
+  .banner-Text-inner{
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
-  }
-  .Home-AboutUs .Home-AboutUs-Intro{
-    width: 100%;
-  }
-  .Home-AboutUs-Intro h2{
-
-    width: 100%;
-    text-align: center;
-  }
-  .Home-AboutUs-Intro p{
-    width: 100%;
-  }
-  .Home-AboutUs-Intro-Button{
-    width: 100%;
-  }
-  .Home-AboutUs-Intro-Images{
-    width: 80%;
-  }
-  .Home-AboutUs-Intro-Images{
-    width: 90%;
-  }
-  .Home-OurProducts{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-  .Home-Our-Products-Content h2{
-    width: 100%;
-    padding: 1rem;
-  }
-  .Home-Our-Products-Content p{
-    width: 90%;
-  }
-  .Achievement-Parent{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .Achievement-Card{
-    width: 100%;
-  }
-  .Home-Our-Products-Content{
-    width: 100%;
-  }
-  .Home-OurProducts-Category-ProductCard01{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .Home-OurProducts-Category-ProductCard01 img{
-    width: 80%;
-    padding: 1rem;
-  }
-  .Home-OurProducts-Category-ProductCard01 p{
-    width: 95%;
-  }
-  .OurClient-Parent{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 90%;
     justify-content: center;
-    grid-row-gap: 2rem;
   }
-}
-@media (max-width:330px) {
-  .Home-OurProducts-Category-ProductCard01 p{
-    width: 90%;
+  .Home-AboutUs{
+    flex-direction: column;
+    width: 100%;
   }
+  .ProductContainer{
+    flex-direction: row;
+    width: 100%;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .ProductContainer .counter{
+    width: 30%;
+
+  
+ }
+ .Home-AboutUs .Home-AboutUs-Intro{
+   width: 100%;
+ }
 }
+ @media (max-width:780px){
+   .Home-Our-Products-Content{
+     padding-left: 2rem;
+   }
+   .Deal-Products-Images>:first-child{
+     margin: 0;
+   }
+   .Deal-Products-Images>:last-child{
+    margin: 0;
+  }
+   .Deal-Products-Images{
+     display: flex;
+     flex-direction:row;
+     gap: 2rem;
+     flex-wrap: wrap;
+     padding: 2rem;
+   }
+   .Image-Link{
+     width: 20%;
+     min-width: 200px;
+   }
+   .Home-OurProduct-Image{
+     align-items: center;
+   }
+   .Home-AboutUs-Intro h2{
+     width: 100%;
+     word-wrap: none;
+     
+   }
+   .Home-AboutUs-Intro p{
+     width: 100%;
+     margin-top: 2rem;
+   }
+   .Home-AboutUs-Intro-Button{
+     width: 50%;
+   }
+   .Home-AboutUs-Intro-Images{
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
+   .Home-AboutUs-Intro-Images img {
+     width: 80%;
+     margin-top: 1rem;
+   }
+   .Home-Our-Products-Content{
+     gap: 2%;
+   }
+   .Home-Our-Products-Content h2{
+     width: 100%;
+     font-size: 2.5rem;
+     margin-top: 0%;
+     margin-bottom: 2rem;
+     text-align: left;
+   }
+   .Home-Our-Products-Content p{
+     width: 100%;
+ 
+   }
+   .Home-OurProducts-Category-ProductCard01{
+     width: 75%;
+   }
+   .Home-OurProducts-Category-ProductCard01 img{
+     width: 55%;
+   }
+   .Home-OurProducts-Category-ProductCard01 p{
+     width: 100%;
+   }
+   .Achievement-Card img{
+     width: 30%;
+   }
+ 
+   .Achievement-Card p{
+     width: 100%;
+   }
+
+ }
+ @media (max-width: 576px){
+   .banner-part {
+     height: 650px;
+     background-color: #f0eed4;
+   }
+   .banner-part .banner-Text {
+     padding-top: 0px;
+     height: 650px;
+   }
+   .banner-part .banner-Text h1 {
+     margin-bottom: 15px;
+     line-height: 1.3;
+ }
+ 
+ }
+ @media (max-width: 430px){
+   .Home-AboutUs{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:center;
+   }
+   .Home-AboutUs .Home-AboutUs-Intro{
+     width: 100%;
+   }
+   .Home-AboutUs-Intro h2{
+ 
+     width: 100%;
+     text-align: center;
+   }
+   .Home-AboutUs-Intro p{
+     width: 100%;
+   }
+   .Home-AboutUs-Intro-Button{
+     width: 100%;
+   }
+   .Home-AboutUs-Intro-Images{
+     width: 80%;
+   }
+   .Home-AboutUs-Intro-Images{
+     width: 90%;
+   }
+   .Home-OurProducts{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 1rem;
+   }
+   .Home-Our-Products-Content h2{
+     width: 100%;
+     padding: 1rem;
+   }
+   .Home-Our-Products-Content p{
+     width: 90%;
+   }
+   .Achievement-Parent{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+   }
+   .Achievement-Card{
+     width: 100%;
+   }
+   .Home-Our-Products-Content{
+     width: 100%;
+   }
+   .Home-OurProducts-Category-ProductCard01{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+   }
+   .Home-OurProducts-Category-ProductCard01 img{
+     width: 80%;
+     padding: 1rem;
+   }
+   .Home-OurProducts-Category-ProductCard01 p{
+     width: 95%;
+   }
+   .OurClient-Parent{
+     width: 100%;
+     display: grid;
+     grid-template-columns: 90%;
+     justify-content: center;
+     grid-row-gap: 2rem;
+   }
+   .Deal-Products-Images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .Image-Link{
+    width: 80%;
+  }
+  .Deal-Products-Images>:first-child{
+    margin-left: 0%;
+  }
+  .Deal-Products-Images>:last-child{
+    margin-right: 0%;
+  }
+  .Home-OurProduct-Image{
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .Home-OurProduct-Image img{
+    width: 100%;
+  }
+  .banner-Text .btn-1{
+    margin-top: 2rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+  }
+ }
+ @media (max-width:330px) {
+   .Home-OurProducts-Category-ProductCard01 p{
+     width: 90%;
+   }
+   .Deal-Products-Images{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   .Image-Link{
+     width: 80%;
+   }
+   .Deal-Products-Images>:first-child{
+     margin-left: 0%;
+   }
+   .Deal-Products-Images>:last-child{
+     margin-right: 0%;
+   }
+   .Home-OurProduct-Image{
+     margin-top: 2rem;
+     width: 100%;
+   }
+   .Home-OurProduct-Image{
+    width: 100%;
+   }
+   .Home-OurProduct-Image img{
+     width: 100%;
+   }
+   .OurProducts-btn01{
+     padding: 10px 30px;
+   }
+ }

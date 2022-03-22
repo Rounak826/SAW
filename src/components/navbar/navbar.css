@@ -26,13 +26,16 @@ nav .info{
   padding: 0.6rem 1rem;
   border-radius:0.6rem;
   background-color: #fe5c24;
-  color: white;
+  color: white !important;
   transition: all 0.3s ease;
+  color: #fe5c24;
+  padding: 0.6rem 1rem !important;
 }
 .transparent .Quote-Btn-1:hover{
   border: none;
   background-color: white;
-  color: #fe5c24;
+  color: #fe5c24 !important;
+
 }
 .solid .Quote-Btn-1{
   width: max-content;
@@ -42,6 +45,7 @@ nav .info{
   background-color: white;
   color: #fe5c24;
   transition: all 0.3s ease;
+  padding: 0.6rem 1rem !important;
 }
 .solid .Quote-Btn-1:hover{
   border: none;
@@ -54,6 +58,14 @@ nav .info .col{
   flex-direction: column;
   align-items: flex-start;
   row-gap: 0.6rem;
+}
+nav .info .col a{
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0;
 }
 nav .info svg{
   height: 1.2rem;
@@ -118,7 +130,7 @@ nav .links{
   display: flex;
   align-items: center;
   width: fit-content;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 .solid a{
     padding: 0.6rem 1rem;
@@ -151,7 +163,7 @@ nav .links{
 
 }
 .sideBar{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     padding:1rem 0.6rem;
@@ -193,15 +205,57 @@ nav .links{
     color: #1e1e1e;
 
 }
+.sideBar .links a:hover{
+  border-bottom: solid 2px #fe5c24;
+}
 .dropdown-item {
   color: black !important;
+}
+.sideBar .info{
+  display: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+
+}
+.sideBar .info .col{
+  flex-direction: column;
+  gap: 1rem;
+}
+.sideBar .info .col a{
+  width: 100%;
+  text-decoration: none;    
+  color: #1e1e1e;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  padding-left: 1rem;  
+  margin-bottom: 1rem;
+
+}
+.sideBar .Quote-Btn-1{
+  width: max-content;
+  padding: 0.6rem 1rem;
+  border: 1px solid #fe5c24;
+  border-radius: 0.6rem;
+  background-color: #fe5c24;
+  color: #fff !important;
+  transition: all 0.3s ease;
+  padding: 0.6rem 1rem !important;
+  margin-left: 1rem;
+}
+.sideBar .Quote-Btn-1:hover{
+  border: none;
+  background-color: #fe5c24;
+  color: white;
 }
 
 @media only screen and (max-width: 1273px) {
 
     nav .info{
     margin-right: 2rem;
-    gap: 0.6rem;
+    gap: 2rem;
     }
     nav .logo{
         margin-left: 2rem;
@@ -236,6 +290,12 @@ nav .links{
   }
   nav .logo{
     width: 8rem;
+  }
+  .sideBar{
+    display: flex;
+  }
+  .sideBar .info{
+    display: flex;
   }
 }
 .flex{

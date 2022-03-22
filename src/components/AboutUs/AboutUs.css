@@ -218,3 +218,46 @@ margin-top: 5rem;
     align-items: center;
   }
 }
+@media only screen and (max-width: 780px){
+  .Features{
+    flex-direction: column;
+  }
+  .Features-Col-1{
+    width: 100%;
+  }
+  .Features-Col-2{
+    width: 100%;
+  }
+  .Iso-Logo img{
+    width: 100%;
+  }
+  .First{
+    padding: 0%;
+  }
+} 
+@media only screen and (max-width: 430px){
+  .Feature-Card-icon img{
+    width: 100%;
+  }
+  .Feature-Card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Features-Col-1{
+    width: 100%;
+    align-items: center;
+  }
+  .AboutUs-SubImage img{
+    width: 100%;
+  }
+  .AboutUs-Introduction-1{
+    gap: 1rem;  
+  }
+}
+@media only screen and (max-width: 350px){
+  .AboutUs-Introduction-1 p{
+    width: 100%;
+  }
+}

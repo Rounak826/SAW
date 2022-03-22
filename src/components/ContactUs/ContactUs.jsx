@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ContactUs.css";
 import FeatherIcon from "feather-icons-react";
+import { useLocation } from "react-router-dom";
 export default function ContactUs() {
+  const location = useLocation();
   const HandleSubmit = (e) => {
     e.preventDefault();
     const scriptURL = `https://v1.nocodeapi.com/tejas001/google_sheets/xhkmsXbsrKKAgzxy?tabId=Sheet1`;
-
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     const form = document.forms['ContactUs']
     let data = new FormData(form)
     let row = [
-      [data.get("Name"), data.get("Email"), data.get("Number"), data.get("Query")]
+      [data.get("Name"), data.get("Email"),data.get("Product"), data.get("Number"), data.get("Query")]
     ]
 
     console.log(row)
@@ -29,7 +30,13 @@ export default function ContactUs() {
       .then(result => {console.log(result)})
       .catch(error => console.log('error', error));
   }
-
+  useEffect(() => {
+    console.log(location.state);
+    if(location.state){
+        
+    }
+  }, [location])
+  
   return (
     <div className="ContactUs">
       <div className="ContactUs-Image">
@@ -89,12 +96,10 @@ export default function ContactUs() {
           <div className="Form">
             <h1>Get in Touch </h1>
             <form name="ContactUs" onSubmit={HandleSubmit}>
-              <label htmlFor="Name"></label>
               <input type="text" placeholder="Your Name..." name="Name" />
-              <label htmlFor="Email"></label>
               <input type="text" placeholder="Your Email Id..." name="Email" />
-              <label htmlFor="Number"></label>
               <input type="text" placeholder="Your Number..." name="Number" />
+              <input type="text" value={location.state&&location.state.product} placeholder="Product name , Dimension" name="Product" />
               <textarea
                 name="Query"
                 id=""

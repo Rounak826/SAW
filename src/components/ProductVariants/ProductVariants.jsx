@@ -42,7 +42,7 @@ function VarientCard(props) {
             <button onClick={() => setShowMenu(false)}><X /></button>
           </div>
           <div className="wrapper">
-            {dimensions.map((dimension, index) => <button key={index} onClick={(product, dimension) => navigate('/ContactUs',{product:`${product}-${dimension}`})}>{dimension} </button>)}
+            {dimensions.map((dimension, index) => <button key={index} onClick={() => navigate('/ContactUs',{state:{product:product+'-'+dimension }})}>{dimension} </button>)}
 
           </div>
         </div>

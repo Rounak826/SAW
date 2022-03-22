@@ -24,6 +24,9 @@ import highaluminaCard from '../icons/highaluminaCard.jpeg'
 import insulatingbrickCard from '../icons/insulatingbrickCard.jpg'
 import fireclayCard from '../icons/fireclayCard.jpeg'
 import firebrick from '../icons/firebrick.jpg'
+import experience from '../icons/discuss.png'
+import projects from '../icons/feedback.png'
+import analysis from '../icons/analysis.png'
 import { Link } from "react-router-dom";
 export default function Home() {
   const Industrylist = [
@@ -117,22 +120,39 @@ export default function Home() {
       </div>
 
       <div className="Home-AboutUs">
-        <div className="Home-AboutUs-Intro-Images">
-          <ul className="ProductContainer">
-            <li>
+        <div className="ProductContainer">
+          <div className="counter">
+            <div className="image">
+              <img src={experience} alt="" />
+            </div>
+            <div className="info">
               <h3>22+</h3>
               <h5>Years Of Experience</h5>
-            </li>
-            <li>
+            </div>
+
+          </div>
+          <div className="counter">
+            <div className="image">
+              <img src={projects} alt="" />
+            </div>
+            <div className="info">
               <h3>20000+</h3>
               <h5>Projects Served</h5>
-            </li>
-            <li>
+            </div>
+
+          </div>
+          <div className="counter">
+            <div className="image">
+              <img src={analysis} alt="" />
+            </div>
+            <div className="info">
               <h3>200</h3>
               <h5>Million Bricks Supplied</h5>
-            </li>
-          </ul>
+            </div>
+
+          </div>
         </div>
+
         <div className="Home-AboutUs-Intro">
           <h2>
             WELCOME TO <span className="Mods">SAW</span>{" "}
@@ -155,18 +175,16 @@ export default function Home() {
       <div className="Home-OurProducts">
         <div className="Home-Our-Products-Content">
           <h2>
-            Our <span className="Mods">Mission</span> &{" "}
-            <span className="Mods">Vision</span>
+            Our  <span className="Mods">Mission</span> & <span className="Mods">Vision</span>
           </h2>
+          <p className="head3">Mission</p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-            itaque soluta enim quasi voluptates! Consequatur delectus illum
-            blanditiis deserunt explicabo quod culpa molestiae corrupti quaerat
-            obcaecati id, quam quo! Ducimus. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Dicta ipsam adipisci, totam nostrum
-            quia incidunt aliquam iure beatae doloribus necessitatibus cumque
-            animi dolore. Deserunt assumenda eos totam velit, magnam error.
+            As a manufacturing company our mission is to be successful by effectively
+            & efficiently utilizing our philosophies,So that we achieve & maintain constantly
+            the High Standards of Product quality & customer satisfaction.
           </p>
+          <p className="head3">Vision</p>
+          <p> Our vision is to continue the heritage of our Company and be a manufacturer of top quality brick products.</p>
           <Link to="/AboutUs" className="OurProducts-btn01">
             READ MORE!
           </Link>

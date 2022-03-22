@@ -1,5 +1,6 @@
 import React from 'react'
-
+import {fireClay} from '../../Data';
+import ProductVariants from '../ProductVariants/ProductVariants'
 export default function FireClay() {
   return (
     <div className='FireClay'>
@@ -16,19 +17,7 @@ export default function FireClay() {
       </div>
     </div>
   </div>
-  <div className="Dimensions">
-    <h1>Available Dimensions</h1>
-    <div className="row-Dimension">
-      <p>
-        Un Burnt Fire Clay - <span className="Mods-2">50 kg</span>Bag{" "}
-        
-      </p>
-      <p>
-      Burnt Fire Clay - <span className="Mods-2">50 kg</span> Bag{" "}
-        
-      </p>
-    </div>
-  </div>
+  <ProductVariants data={fireClay}/>
   <div className="Acid-Proof-Brick-Introduction">
     <div className="Introduction-of-Brick">
       <h1>High Alumina Brick</h1>

@@ -1,5 +1,7 @@
 import React from 'react'
-
+import InsulationCard from '../icons/InsulationCard.jpeg'
+import {InsulationBrick} from '../../Data';
+import ProductVariants from '../ProductVariants/ProductVariants'
 export default function FireInsulatio() {
   return (
     <div className='FireInsulation'>
@@ -16,27 +18,7 @@ export default function FireInsulatio() {
       </div>
     </div>
   </div>
-  <div className="Dimensions">
-    <h1>Available Dimensions</h1>
-    <div className="row-Dimension">
-      <p>
-        A.Ṛ <span className="Mods-2">230X115X75</span> mm CLASS{" "}
-        <span className="Mods-2">I</span>{" "}
-      </p>
-      <p>
-        A.Ṛ <span className="Mods-2">230X115X38</span> mm CLASS{" "}
-        <span className="Mods-2">I</span>{" "}
-      </p>
-      <p>
-        A.Ṛ <span className="Mods-2">230X115X75</span> mm CLASS{" "}
-        <span className="Mods-2">II</span>{" "}
-      </p>
-      <p>
-        A.Ṛ <span className="Mods-2">230X115X38</span> mm CLASS{" "}
-        <span className="Mods-2">II</span>{" "}
-      </p>
-    </div>
-  </div>
+  <ProductVariants data={InsulationBrick}/>
   <div className="Acid-Proof-Brick-Introduction">
     <div className="Introduction-of-Brick">
       <h1>Insulation Brick</h1>
@@ -45,10 +27,7 @@ export default function FireInsulatio() {
       </p>
     </div>
     <div className="KeyFeaturesCard">
-      <h4>Our Products</h4>
-      <p>Cold Face Insulation </p>
-      <p>Hot Face Insulation</p>
-      <p>Hot Face Kyanite </p>
+      <img src={InsulationCard} alt="" />
     </div>
   </div>
   <div className="WaterResistant">

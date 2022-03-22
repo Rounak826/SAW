@@ -1,13 +1,18 @@
-import image01 from './components/icons/image01.jpg'
-import image02 from './components/icons/image02.jpg'
-import image03 from './components/icons/image03.jpg'
-import image04 from './components/icons/image04.jpg'
-import image05 from './components/icons/image05.jpg'
-import image06 from './components/icons/image06.jpg'
-import image07 from './components/icons/image07.jpg'
-import image08 from './components/icons/image08.jpg'
-import image09 from './components/icons/image09.jpg'
- const data = [
+import image01 from '../src/./components/icons/image01.jpg'
+import image02 from '../src/./components/icons/image02.jpg'
+import image03 from '../src/./components/icons/image03.jpg'
+import image04 from '../src/./components/icons/image04.jpg'
+import image05 from '../src/./components/icons/image05.jpg'
+import image06 from '../src/./components/icons/image06.jpg'
+import image07 from '../src/./components/icons/image07.jpg'
+import image08 from '../src/./components/icons/image08.jpg'
+import image09 from '../src/components/icons/image09.jpg'
+import fireclayCard from '../src/components/icons/fireclayCard.jpeg'
+import highaluminaCard from '../src/components/icons/highaluminaCard.jpeg' 
+import insulatingbrickCard from '../src/components/icons/insulatingbrickCard.jpg'
+import class1 from '../src/components/icons/class1.jpeg'
+import class2 from '../src/components/icons/class2.jpeg'
+ export const FireBrick = [
     {
         image: image09,
         product:'IS 6',
@@ -123,4 +128,85 @@ import image09 from './components/icons/image09.jpg'
         ]
       }
 ]
-export default data;
+
+export const AcidBrick = [
+  { 
+    image:class1,
+    product:'Unglazed A.R Clay Brick Class I',
+    dimensions:[
+      '230x115x75 mm',
+    ]
+  },
+  { 
+    image:class2,
+    product:'Unglazed A.R Clay Brick Class II',
+    dimensions:[
+      '230x115x75 mm',
+    ]
+  },
+  { 
+    image:class1,
+    product:'Unglazed A.R Clay Brick Class I',
+    dimensions:[
+      '230x115x38 mm',
+    ]
+  },
+  { 
+    image:class2,
+    product:'Unglazed A.R Clay Brick Class II',
+    dimensions:[
+      '230x115x38 mm',
+    ]
+  },
+  { 
+    image:class1,
+    product:'Unglazed A.R Clay Brick Class I',
+    dimensions:[
+      '230x115x30 mm',
+    ]
+  },
+  { 
+    image:class2,
+    product:'Unglazed A.R Clay Brick Class II',
+    dimensions:[
+      '230x115x30 mm',
+    ]
+  },
+]
+
+export const InsulationBrick =[
+  { 
+    image:insulatingbrickCard ,
+    product:'C.F.I',
+    dimensions:[
+      '230x115x75 mm',
+    ]
+  },
+]
+
+export const HighAluminaBrick =[
+  { 
+    image:highaluminaCard,
+    product:`Satpura Special 40% & 70% Al2O3`,
+    dimensions:[
+      '230x115x75 mm',
+    ]
+  },
+]
+
+export const fireClay = [
+  { 
+    image:fireclayCard,
+    product:'Unburnt Fire Clay',
+    dimensions:[
+      '50 kg bag',
+    ]
+  },
+  { 
+    image:fireclayCard,
+    product:'Burnt Fire Clay',
+    dimensions:[
+      '50 kg bag',
+    ]
+  },
+]

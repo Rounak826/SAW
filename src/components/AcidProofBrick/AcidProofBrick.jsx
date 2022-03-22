@@ -1,7 +1,7 @@
 import React from "react";
 import "./AcidProofBrick.css";
-import ARclass1 from "../icons/ARclass1.jpeg";
-import ARclass02 from "../icons/ARclass02.jpeg";
+import ARclass1Png from "../icons/ARclass1Png.png"
+import ARclass2Png from "../icons/ARclass2Png.png"
 import chimney from "../assets/chimney.jpg";
 import AcidStorageTank from "../assets/AcidStorageTank.jpg";
 import ARclassII01 from '../icons/ARclassII01.jpeg'
@@ -9,7 +9,8 @@ import ARclassII02 from '../icons/ARclassII02.jpeg'
 import { Check } from "react-feather";
 import ARFloor from '../icons/ARFloor.jpg'
 import ProductVariants from "../ProductVariants/ProductVariants";
-import data from "../../Data";
+import image04 from '../assets/Image04.jpeg'
+import {AcidBrick} from "../../Data";
 export default function AcidProofBrick() {
   return (
     <div className="AcidProofBrick">
@@ -26,7 +27,7 @@ export default function AcidProofBrick() {
           </div>
         </div>
       </div>
-      <ProductVariants data={data}/>
+      <ProductVariants data={AcidBrick}/>
       <div className="Acid-Proof-Brick-Introduction">
         <div className="Introduction-of-Brick">
           <h1>Acid Resistant Bricks</h1>
@@ -46,21 +47,14 @@ export default function AcidProofBrick() {
           </p>
         </div>
         <div className="KeyFeaturesCard">
-          <h4>Our Products</h4>
-          <p>
-            {" "}
-            <Check /> Standard
-          </p>
-          <p>
-            <Check /> Tiles
-          </p>
-          <p>And other special sizes...</p>
+          <img src={image04} alt="" />
         </div>
       </div>
       <div className="WaterResistant">
         <h1>Water Absorption</h1>
         <div className="WaterResistent-Row">
           <div className="WaterResistant-Row-Card">
+            <div className="WaterResistant-Row-Card-Content">
             <h2>Class I</h2>
             <p>
               <Check /> Water Absorption &#60; 1%
@@ -74,8 +68,13 @@ export default function AcidProofBrick() {
             <p>
               <Check /> Acid Resistant &#60; 1 %
             </p>
+            </div>
+           <div className="WaterResistant-Row-Card-Image">
+             <img src={ARclass1Png} alt="" />
+           </div>
           </div>
           <div className="WaterResistant-Row-Card">
+            <div className="WaterResistant-Row-Card-Content">
             <h2>Class II</h2>
             <p>
               <Check /> Water Absorption &#60; 1%
@@ -89,6 +88,10 @@ export default function AcidProofBrick() {
             <p>
               <Check /> Acid Resistant &#60; 1 %
             </p>
+            </div>
+           <div className="WaterResistant-Row-Card-Image">
+           <img src={ARclass2Png} alt="" />
+           </div>
           </div>
         </div>
       </div>

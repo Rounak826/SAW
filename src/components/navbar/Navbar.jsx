@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useLayoutEffect, useState } from "react";
-import { Menu, X } from "react-feather";
+import { Menu, PhoneCall, X } from "react-feather";
 import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
 import logo from "../assets/logo.png";
@@ -20,8 +20,8 @@ export default function Navbar() {
       title: "Fire Proof Brick",
     },
     {
-      link: "/FireInsulation",
-      title: "High Insulation Brick",
+      link: "/InsulationBrick",
+      title: "Insulation Brick",
     },
     {
       link: "/FireClay",
@@ -53,13 +53,17 @@ export default function Navbar() {
 
         <div className="links">
           <Link to="/">Home</Link>
-          <Link to="/AboutUs">About Us</Link>
           <LinkDropDown label={"Our Products"} links={Products} />
+          <Link to={'/Gallery'} >Gallery</Link>
+          <Link to="/AboutUs">About Us</Link>
           <Link to="/ContactUs">Contact Us</Link>
-          
-          
         </div>
         <div className="info">
+          <div className="col">
+            <a href="tel:+919425152102"><PhoneCall />9425152102</a>
+            <a href="tel:+919893519860"><PhoneCall />9893519860</a>
+
+          </div>
           <div className="col">
             <div className="row">
               <Link className="Quote-Btn-1" to="/ContactUs">
@@ -98,21 +102,26 @@ export default function Navbar() {
               </button>
             </div>
             <div className="links">
-            <Link to="/">Home</Link>
-          <Link to="/AboutUs">About Us</Link>
+          <Link to="/">Home</Link>
           <LinkDropDown label={"Our Products"} links={Products} />
+          <Link to={'/Gallery'} >Gallery</Link>
+          <Link to="/AboutUs">About Us</Link>
           <Link to="/ContactUs">Contact Us</Link>
-              <div className="info">
-                <div className="col">
-                  <div className="row">
-                    <Link className="Quote-Btn-1" to="/ContactUs">
-                      Get Quote
-                    </Link>
-                  </div>
-                </div>
-                <div className="col"></div>
-              </div>
+        </div>
+        <div className="info">
+          <div className="col">
+            <a href="tel:+919425152102"><PhoneCall/>9425152102</a>
+            <a href="tel:+919893519860"><PhoneCall/>9893519860</a>
+            
+          </div>
+          <div className="col">
+            <div className="row">
+              <Link className="Quote-Btn-1" to="/ContactUs">
+                Get Quote
+              </Link>
             </div>
+          </div>
+         </div> 
           </motion.div>
         </AnimatePresence>
       )}

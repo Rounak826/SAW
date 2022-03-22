@@ -26,7 +26,7 @@ function App() {
           <Route path="/AcidProofBrick" element={<AcidProofBrick />} />
           <Route path="/AluminaBrick" element={<AluminaBrick />} />
           <Route path="/FireProofBrick" element={<FireProofBrick />} />
-          <Route path="/FireInsulation" element={<FireInsulation />} />
+          <Route path="/InsulationBrick" element={<FireInsulation />} />
           <Route path="/FireClay" element={<FireClay />} />
           <Route path="/Gallery" element={<Hdcarausel />} />
         </Routes>
