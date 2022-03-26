@@ -11,14 +11,17 @@ import fireclayCard from '../src/components/icons/fireclayCard.jpeg'
 import highaluminaCard from '../src/components/icons/highaluminaCard.jpeg' 
 import insulatingbrickCard from '../src/components/icons/insulatingbrickCard.jpg'
 import class1 from '../src/components/icons/class1.jpeg'
-import class2 from '../src/components/icons/class2.jpeg'
+import class2YellowBrick from '../src/components/icons/Class2YellowBrick.png'
+import Class2YellowBrick2 from '../src/components/icons/Class2YellowBrick2.png'
+import HFK from '../src/components/icons/HFK.jpg'
+import HFI from '../src/components/icons/HFI.jpg'
  export const FireBrick = [
     {
         image: image09,
         product:'IS 6',
         dimensions:[
-          '25x100 mm',
-          '35x200 mm',
+          '25x100 inches',
+          '35x200 inches',
           
         ]
       },
@@ -26,7 +29,7 @@ import class2 from '../src/components/icons/class2.jpeg'
         image:image01,
         product:'Standard',
         dimensions:[
-          '9x4.5x3 mm',
+          '9x4.5x3 inches',
   
         ]
       },
@@ -35,9 +38,9 @@ import class2 from '../src/components/icons/class2.jpeg'
         image:image02,
         product:'Side Arch',
         dimensions:[
-          '9x4.5/3/2.5 mm',
-          '9x4.5/3/2 mm',
-          '9x4.5/3/1.5 mm'
+          '9x4.5/3/2.5 inches',
+          '9x4.5/3/2 inches',
+          '9x4.5/3/1.5 inches'
   
         ]
       },
@@ -46,9 +49,9 @@ import class2 from '../src/components/icons/class2.jpeg'
         image:image03,
         product:'End Arch',
         dimensions:[
-          '9x4.5/3/2.5 mm',
-          '9x4.5/3/2 mm',
-          '9x4.5/3/1.5 mm'
+          '9x4.5/3/2.5 inches',
+          '9x4.5/3/2 inches',
+          '9x4.5/3/1.5 inches'
   
         ]
       },
@@ -56,14 +59,14 @@ import class2 from '../src/components/icons/class2.jpeg'
         image:image04,
         product:'Ring Center Hole',
         dimensions:[
-          '24x9x3 mm',
-          '24x12x3 mm',
-          '26x9x3 mm',
-          '24x12x3 mm',
-          '30x9x3 mm',
-          '30x12x3 mm',
-          '32x9x3 mm',
-          '32x12x3 mm'
+          '24x9x3 inches',
+          '24x12x3 inches',
+          '26x9x3 inches',
+          '24x12x3 inches',
+          '30x9x3 inches',
+          '30x12x3 inches',
+          '32x9x3 inches',
+          '32x12x3 inches'
   
         ]
       },
@@ -71,11 +74,11 @@ import class2 from '../src/components/icons/class2.jpeg'
         image:image05,
         product:'Ring Side Hole',
         dimensions:[
-          '24x3x3 mm',
-          '26x3x5 mm',
-          '28x3x3 mm',
-          '30x3x3 mm',
-          '32x3x3 mm'
+          '24x3x3 inches',
+          '26x3x5 inches',
+          '28x3x3 inches',
+          '30x3x3 inches',
+          '32x3x3 inches'
   
         ]
       },
@@ -83,13 +86,13 @@ import class2 from '../src/components/icons/class2.jpeg'
         image:image06,
         product:'Block',
         dimensions:[
-          '24x12x6 mm',
-          '24x12x12 mm',
-          '9x6x3 mm',
-          '24x12x13 mm',
-          '30x12x3 mm',
-          '18x12x3 mm',
-          '12x2x3 mm',
+          '24x12x6 inches',
+          '24x12x12 inches',
+          '9x6x3 inches',
+          '24x12x13 inches',
+          '30x12x3 inches',
+          '18x12x3 inches',
+          '12x2x3 inches',
           
         ]
       },
@@ -97,17 +100,17 @@ import class2 from '../src/components/icons/class2.jpeg'
         image:image07,
         product:'Split',
         dimensions:[
-          '9x4.5x1 mm',
-          '9x4.5x1.5 mm',
-          '9x4.5x2 mm',
+          '9x4.5x1 inches',
+          '9x4.5x1.5 inches',
+          '9x4.5x2 inches',
         ]
       },
       { 
         image:image08,
         product:'Coupola Mouth Piece',
         dimensions:[
-          '2.75/1.75 mm',
-          '2.75/0.5 mm',
+          '2.75/1.75 inches',
+          '2.75/0.5 inches',
   
         ]
       },
@@ -116,15 +119,15 @@ import class2 from '../src/components/icons/class2.jpeg'
         product:'Burner Block',
         dimensions:[
           '9x9x9 mm',
-          '12x12x12 mm',
-          '14x14x14 mm'
+          '12x12x12 inches',
+          '14x14x14 inches'
         ]
       },
       { 
         image:image08,
         product:'Round Coupola',
         dimensions:[
-          '15,18,24,30 mm',
+          '15,18,24,30 inches',
         ]
       }
 ]
@@ -138,7 +141,7 @@ export const AcidBrick = [
     ]
   },
   { 
-    image:class2,
+    image: class2YellowBrick,
     product:'Unglazed A.R Clay Brick Class II',
     dimensions:[
       '230x115x75 mm',
@@ -152,7 +155,7 @@ export const AcidBrick = [
     ]
   },
   { 
-    image:class2,
+    image: class2YellowBrick,
     product:'Unglazed A.R Clay Brick Class II',
     dimensions:[
       '230x115x38 mm',
@@ -166,7 +169,7 @@ export const AcidBrick = [
     ]
   },
   { 
-    image:class2,
+    image:Class2YellowBrick2,
     product:'Unglazed A.R Clay Brick Class II',
     dimensions:[
       '230x115x30 mm',
@@ -182,12 +185,40 @@ export const InsulationBrick =[
       '230x115x75 mm',
     ]
   },
+  { 
+    image:HFK ,
+    product:'H.F.K',
+    dimensions:[
+      '230x115x75 mm',
+    ]
+  },
+  { 
+    image:HFI,
+    product:'H.F.I',
+    dimensions:[
+      '230x115x75 mm',
+    ]
+  },
 ]
 
 export const HighAluminaBrick =[
   { 
     image:highaluminaCard,
     product:`Satpura Special 40% & 70% Al2O3`,
+    dimensions:[
+      '230x115x75 mm',
+    ]
+  },
+  { 
+    image:highaluminaCard,
+    product:`IS6 40% `,
+    dimensions:[
+      '230x115x75 mm',
+    ]
+  },
+  { 
+    image:highaluminaCard,
+    product:` IS8 70% `,
     dimensions:[
       '230x115x75 mm',
     ]

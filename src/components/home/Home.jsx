@@ -11,7 +11,6 @@ import powergenerationindustry from "../assets/Powergenerationindustry.jpg";
 import Fertilizerindustry from "../assets/Fertilizerindustry.jpg";
 import spongeiron from "../assets/spongeiron.jpg";
 import steelindustry from "../assets/steelindustry.jpg";
-import BrickImage01 from "../assets/BrickImage01.jpg";
 import petrochemical from "../assets/petrochemical.jpg";
 import flat from '../icons/destination.png'
 import badge from '../icons/badge.png'
@@ -19,7 +18,6 @@ import maintenance from '../icons/gears.png'
 import SatpuraSlideOne from "../assets/SatpuraSlideOne.jpeg";
 import SatpuraSlideTwo from "../assets/SatpuraSlideTwo.jpeg";
 import SatpuraSlideThree from "../assets/SatpuraSlideThree.jpeg";
-import AcidBrickCard from '../icons/AcidBrickCard.jpg'
 import highaluminaCard from '../icons/highaluminaCard.jpeg'
 import insulatingbrickCard from '../icons/insulatingbrickCard.jpg'
 import fireclayCard from '../icons/fireclayCard.jpeg'
@@ -28,6 +26,7 @@ import experience from '../icons/discuss.png'
 import projects from '../icons/feedback.png'
 import analysis from '../icons/analysis.png'
 import { Link } from "react-router-dom";
+import class1 from '../icons/class1.jpeg'
 export default function Home() {
   const Industrylist = [
     {
@@ -41,7 +40,7 @@ export default function Home() {
       image: Rollingmill,
     },
     {
-      title: "Wooden Pallet Industry",
+      title: "Woden Pellet Industry",
 
       image: Palletindustry,
     },
@@ -86,11 +85,10 @@ export default function Home() {
                 <h5>
                   Since <span className="Mods">2000</span>
                 </h5>
-                <h1> Satpura Acid Ware & Stone Ware Pipes</h1>
+                <h1> Satpura Acid Ware</h1>
                 <h5>JABALPUR, MADHYA PRADESH</h5>
                 <h3>
-                  Manufacturing all types of Refactories, A.R bricks & Stone
-                  Ware Pipes
+                  Manufacturing all types of Refractories, A.R bricks, Fire Proof Bricks and many more...
                 </h3>
                 <Link to="/ContactUs" className="btn-1">
                   Contact Us
@@ -157,9 +155,9 @@ export default function Home() {
           <h2>
             WELCOME TO <span className="Mods">SAW</span>{" "}
           </h2>
-          <p><span className="Intro-Mod">Satpura acid ware also well known as SAW Jabalbur, Madhya Pradesh is in  business of bricks manufacturing since more than 22 years</span></p>
+          <p><span className="Intro-Mod">Satpura Acid Ware also well known as SAW Jabalbur, Madhya Pradesh is in  business of bricks manufacturing since more than 22 years</span></p>
           <p>
-            We Manufacture Re-factory Bricks that are special form of masonry
+            We Manufacture Refractory Bricks that are special form of masonry
             bricks which are chemically resistant and thermally durable. These
             are used for masonry construction and flooring which is prone to
             chemical attack such as towers in chemical plant. These bricks are
@@ -177,13 +175,13 @@ export default function Home() {
           <h2>
             Our  <span className="Mods">Mission</span> & <span className="Mods">Vision</span>
           </h2>
-          <p className="head3">Mission</p>
+          <h5 className="head3">Mission</h5>
           <p>
-            As a manufacturing company our mission is to be successful by effectively
+            As a brick manufacturing company our mission is to be successful by effectively
             & efficiently utilizing our philosophies,So that we achieve & maintain constantly
             the High Standards of Product quality & customer satisfaction.
           </p>
-          <p className="head3">Vision</p>
+          <h5 className="head3">Vision</h5>
           <p> Our vision is to continue the heritage of our Company and be a manufacturer of top quality brick products.</p>
           <Link to="/AboutUs" className="OurProducts-btn01">
             READ MORE!
@@ -200,7 +198,7 @@ export default function Home() {
         <div className="Deal-Products-Images">
           <div className="Image-Link">
             <Link to="/AcidProofBrick">
-              <img src={AcidBrickCard} alt="" />
+              <img src={class1} alt="" />
             </Link>
             <h5>Acid Resistant Brick</h5>
           </div>
@@ -226,7 +224,7 @@ export default function Home() {
             <Link to="/FireClay" >
               <img src={fireclayCard} alt="" />
             </Link>
-            <h5>Fire Clay</h5>
+            <h5>Fire Clay & Castables </h5>
           </div>
         </div>
       </div>

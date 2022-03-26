@@ -69,7 +69,11 @@ export default function ContactUs() {
             </h4>
             <p>
               {" "}
-              Nagpur Road, Opp. Devatal Ramayan Mandir, P.O. GARHA, Jabalpur 482003.
+            Office Address:- Nagpur Road, Opp. Devatal Ramayan Mandir, P.O. GARHA, Jabalpur 482003.
+            </p>
+            <p>
+              {" "}
+            Site Address:- Nagpur Road, Opp. Devatal Ramayan Mandir, P.O. GARHA, Jabalpur 482003.
             </p>
           </div>
           <div className="ContactUs-Card-01">
@@ -79,6 +83,7 @@ export default function ContactUs() {
             <p>9425152102 , 9893519860 , 9425385997</p>
           </div>
           <div className="ContactUs-Card-01">
+            <h4> <FeatherIcon icon="map-pin" /> Office Address</h4>
             <iframe
               title="My Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.37798705876!2d79.89587191497021!3d23.156400584885457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981b1f4c10dc59b%3A0x9477a0a53061a0b1!2sRamayan%20Mandir!5e0!3m2!1sen!2sin!4v1647945134305!5m2!1sen!2sin" 

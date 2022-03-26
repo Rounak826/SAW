@@ -113,7 +113,7 @@ nav .logo span{
 }
 nav .logo img{
     width: 100%;
-    max-width: 5rem;
+    max-width: 6rem;
     aspect-ratio: 1/1;
 }
 nav .navigation{
@@ -164,20 +164,33 @@ nav .links{
 }
 .sideBar{
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    padding:1rem 0.6rem;
+    padding:0;
     position: fixed;
     top:0;
     right: 0;
-    background-color: #fff;
     height: 100vh;
-    width: 40vh;
+    width: 100vw;
     z-index: 100;
 
 }
 .hidden{
     display: none;
+}
+.sideBar .bar{
+  width: 40vw;
+  height: 100vh;
+  padding: 0.6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fff;
+}
+.sideBar .empty{
+  width: 60vw;
+  height: 100vh;
 }
 .sideBar .top{
     width: 100%;
@@ -282,7 +295,9 @@ nav .links{
    .menu{
         display: block;
     }
-
+    .sideBar{
+      display: flex;
+    }
 }
 @media only screen and (max-width: 768px) {
   nav .info{
@@ -291,9 +306,7 @@ nav .links{
   nav .logo{
     width: 8rem;
   }
-  .sideBar{
-    display: flex;
-  }
+
   .sideBar .info{
     display: flex;
   }

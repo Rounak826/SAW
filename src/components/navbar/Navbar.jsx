@@ -13,7 +13,7 @@ export default function Navbar() {
     },
     {
       link: "/AluminaBrick",
-      title: "Alumina Brick",
+      title: "High Alumina Brick",
     },
     {
       link: "/FireProofBrick",
@@ -25,12 +25,13 @@ export default function Navbar() {
     },
     {
       link: "/FireClay",
-      title: "Fire Clay",
+      title: "Fire Clay & Castable",
     },
   ];
-  const location =useLocation();
+  const location = useLocation();
   const [showMenu, setShowMenu] = useState(false);
   const [scrollPosition, setPosition] = useState(0);
+
   useLayoutEffect(() => {
     function updatePosition() {
       setPosition(window.pageYOffset);
@@ -56,16 +57,16 @@ export default function Navbar() {
         </div>
 
         <div className="links">
-          <Link to="/" style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':""}}>Home</Link>
-          <Link  style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':""}} to="/AboutUs">About Us</Link>
-          <LinkDropDown style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':""}} label={"Our Products"} links={Products} />
-          <Link style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':""}} to={'/Gallery'} >Gallery</Link>
-          <Link style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':"#fff"}} to="/ContactUs">Contact Us</Link>
+          <Link to="/" style={{ color: location.pathname === '/Gallery' && scrollPosition < 50 ? '#2b3294' : "" }}>Home</Link>
+          <Link style={{ color: location.pathname === '/Gallery' && scrollPosition < 50 ? '#2b3294' : "" }} to="/AboutUs">About Us</Link>
+          <LinkDropDown style={{ color: location.pathname === '/Gallery' && scrollPosition < 50 ? '#2b3294' : "" }} label={"Our Products"} links={Products} />
+          <Link style={{ color: location.pathname === '/Gallery' && scrollPosition < 50 ? '#2b3294' : "" }} to={'/Gallery'} >Gallery</Link>
+          <Link style={{ color: location.pathname === '/Gallery' && scrollPosition < 50 ? '#2b3294' : "#fff" }} to="/ContactUs">Contact Us</Link>
         </div>
         <div className="info">
           <div className="col">
-            <a style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':""}} href="tel:+919425152102"><PhoneCall />9425152102</a>
-            <a style={{color:location.pathname==='/Gallery'&&scrollPosition < 50?'#2b3294':""}} href="tel:+919893519860"><PhoneCall />9893519860</a>
+            <a style={{ color: location.pathname === '/Gallery' && scrollPosition < 50 ? '#2b3294' : "" }} href="tel:+919425152102"><PhoneCall />9425152102</a>
+            <a style={{ color: location.pathname === '/Gallery' && scrollPosition < 50 ? '#2b3294' : "" }} href="tel:+919893519860"><PhoneCall />9893519860</a>
 
           </div>
           <div className="col">
@@ -95,6 +96,10 @@ export default function Navbar() {
             exit={{ opacity: 0, x: "+10vw" }}
             className="sideBar"
           >
+            <div className="empty" id="empty" onClick={()=>setShowMenu(false)}>
+
+            </div>
+            <div className="bar">
             <div className="top">
               <button
                 onClick={() => {
@@ -106,26 +111,28 @@ export default function Navbar() {
               </button>
             </div>
             <div className="links">
-          <Link to="/">Home</Link>
-          <Link to="/AboutUs">About Us</Link>
-          <LinkDropDown label={"Our Products"} links={Products} />
-          <Link to={'/Gallery'} >Gallery</Link>
-          <Link to="/ContactUs">Contact Us</Link>
-        </div>
-        <div className="info">
-          <div className="col">
-            <a href="tel:+919425152102"><PhoneCall/>9425152102</a>
-            <a href="tel:+919893519860"><PhoneCall/>9893519860</a>
-            
-          </div>
-          <div className="col">
-            <div className="row">
-              <Link className="Quote-Btn-1" to="/ContactUs">
-                Get Quote
-              </Link>
+              <Link to="/">Home</Link>
+              <Link to="/AboutUs">About Us</Link>
+              <LinkDropDown label={"Our Products"} links={Products} />
+              <Link to={'/Gallery'} >Gallery</Link>
+              <Link to="/ContactUs">Contact Us</Link>
             </div>
-          </div>
-         </div> 
+            <div className="info">
+              <div className="col">
+                <a href="tel:+919425152102"><PhoneCall />9425152102</a>
+                <a href="tel:+919893519860"><PhoneCall />9893519860</a>
+
+              </div>
+              <div className="col">
+                <div className="row">
+                  <Link className="Quote-Btn-1" to="/ContactUs">
+                    Get Quote
+                  </Link>
+                </div>
+              </div>
+            </div>
+            </div>
+
           </motion.div>
         </AnimatePresence>
       )}

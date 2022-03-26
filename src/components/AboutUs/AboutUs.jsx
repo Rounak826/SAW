@@ -29,11 +29,11 @@ export default function AboutUs() {
           <h1>
             Who We <span className="Mods">Are</span> ?
           </h1>
-          We are Satpura acid ware also well known as SAW Jabalbur, 
+          We are Satpura Acid Ware also well known as SAW Jabalbur, 
           Madhya Pradesh is in  business of bricks manufacturing 
           since more than 22 years.<br/>
           We are the leading manufacturer of
-          A.R Bricks, All types of refractories and Stone Ware Pipes
+          A.R Bricks, All types of refractories bricks.
         </p>
 
         <div className="AboutUs-SubImage">
@@ -125,13 +125,11 @@ export default function AboutUs() {
           <h1>Quality Policy</h1>
 
           <p>
-          We always & strictly follow the Quality Control Parameters as well defined in the ISO 9001:2000 system, right from Sourcing of raw materials up to production of finished goods. Special attention has always been given in sourcing of other accessories related to completion of turn-key projects.
+          We always & strictly follow the Quality Control Parameters right from Sourcing of raw materials up to production of finished goods. Special attention has always been given in sourcing of other accessories related to completion of turn-key projects.
           Apart from this we are also manufacturing & Testing our products as per Indian Standards(IS) & ASTM Procedures. This Further certify ours as a Quality manufacturer. Behind each one of our quality products and services there is a dedicated team of highly trained engineers and technologist who ensure that we consistently provide the best is to offer.</p>
-          <p>Our Quality Policy, Commits to comply with customer requirements and applicable standards as specified ISO 9001:2000.</p>
+          <p>Our Quality Policy, Commits to comply with customer requirements and applicable standards.</p>
         </div>
-        <div className="Iso-Logo">
-          <img src={isologo} alt="" />
-        </div>
+      
       </div>
 
       <div className="Mission-Vision">

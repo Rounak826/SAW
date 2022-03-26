@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 import iso from "../assets/isologo.png";
 import { Link } from "react-router-dom";
 import LinkDropDown from "../Link-Dropdown/LinkDropDown";
-import { Facebook, Instagram, Mail, MapPin, PhoneCall, Youtube } from "react-feather";
+import { Mail, MapPin, PhoneCall } from "react-feather";
 export const Footer = () => {
   const Products = [
     {
@@ -73,12 +73,13 @@ export const Footer = () => {
             </div>
             </div>
           </div>
-          <div className="certificate">
-            <img src={iso} alt="" />
-            <p>GST No: 23ABXPN6809Q1ZN</p>
-          </div>
+         
         </div>
         <hr />
+        <div className="Row">
+        <a href="https://techjain.com">Site Developed by Tech Jain IT Solutions</a>
+        </div>
+        
       </footer>
     </div>
   );

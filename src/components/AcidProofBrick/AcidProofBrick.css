@@ -176,7 +176,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
   }
   .WaterResistant-Row-Card-Image img{
     border-radius: 10px;
@@ -270,7 +270,7 @@
     }
     .WaterResistant{
       width: 100%;
-      margin-top: 2rem ;
+      margin: 0%;
      
     }
     .WaterResistant h2{
