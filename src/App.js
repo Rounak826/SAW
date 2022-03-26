@@ -11,8 +11,8 @@ import AluminaBrick from './components/AluminaBrick/AluminaBrick.jsx'
 import FireInsulation from './components/Fireinsulation/FireInsulation'
 import FireClay from "./components/FireClay/FireClay";
 import Navbar from './components/navbar/Navbar.jsx'
-import Hdcarausel from "./components/3dcarousel/3dcarousel";
 import { Footer } from "./components/footer/Footer";
+import Gallery from "./components/Gallery/Gallery";
 function App() {
   return (
     <div className="App">
@@ -28,7 +28,7 @@ function App() {
           <Route path="/FireProofBrick" element={<FireProofBrick />} />
           <Route path="/InsulationBrick" element={<FireInsulation />} />
           <Route path="/FireClay" element={<FireClay />} />
-          <Route path="/Gallery" element={<Hdcarausel />} />
+          <Route path="/Gallery" element={<Gallery />} />
         </Routes>
         <Footer/>
       </Router>

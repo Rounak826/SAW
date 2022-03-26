@@ -1,0 +1,51 @@
+.gallery{
+    width: 90%;
+    height:100vh;
+    margin: 7rem 0 0rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.gallery .carousel-root{
+    height: 70vh;
+}
+.gallery .carousel-root img {
+    width: 80%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+.gallery .carousel .thumb{
+    height: 8rem;
+    width: 8rem!important;
+    overflow: visible;
+    border-radius: 1rem;
+}
+.gallery .carousel .thumb img{
+    height: 100%;
+    width: 100%;
+}
+@media (max-width:768px){
+    .gallery{
+        height: 90vh;
+        margin: 8rem 0;
+    }
+    .gallery .carousel-root img {
+        width: 90%;
+      }
+    .gallery .carousel .thumb{
+        height: 6rem;
+        width: 6rem!important;
+        overflow: visible;
+        border-radius: 1rem;
+    }
+}
+@media (max-width:425px){
+    .gallery .carousel .thumb{
+        height: 4rem;
+        width: 4rem!important;
+        overflow: visible;
+        border-radius: 1rem;
+    }
+}

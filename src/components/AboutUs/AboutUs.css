@@ -167,11 +167,15 @@ margin-top: 5rem;
   justify-content: space-around;
   padding: 2rem;
 }
+.Mission-Vision h1{
+  text-align: center;
+}
 .Mission {
   width: 40%;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--secondary);
+  color: black;
   padding: 2rem;
   border: none;
   border-radius: 10px;
@@ -181,7 +185,7 @@ margin-top: 5rem;
   width: 40%;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--secondary);
   padding: 2rem;
   border: none;
   border-radius: 10px;

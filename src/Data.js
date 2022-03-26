@@ -2,19 +2,25 @@ import image01 from '../src/./components/icons/image01.jpg'
 import image02 from '../src/./components/icons/image02.jpg'
 import image03 from '../src/./components/icons/image03.jpg'
 import image04 from '../src/./components/icons/image04.jpg'
-import image05 from '../src/./components/icons/image05.jpg'
+import splitproof from '../src/components/icons/splitproof.jpeg'
 import image06 from '../src/./components/icons/image06.jpg'
-import image07 from '../src/./components/icons/image07.jpg'
+import sidearc from '../src/components/icons/sidearc.png'
+import endarc from '../src/components/icons/endarc.jpeg'
 import image08 from '../src/./components/icons/image08.jpg'
 import image09 from '../src/components/icons/image09.jpg'
 import fireclayCard from '../src/components/icons/fireclayCard.jpeg'
-import highaluminaCard from '../src/components/icons/highaluminaCard.jpeg' 
+import burnerblock from '../src/components/icons/burnerblock.jpeg'
 import insulatingbrickCard from '../src/components/icons/insulatingbrickCard.jpg'
 import class1 from '../src/components/icons/class1.jpeg'
 import class2YellowBrick from '../src/components/icons/Class2YellowBrick.png'
 import Class2YellowBrick2 from '../src/components/icons/Class2YellowBrick2.png'
 import HFK from '../src/components/icons/HFK.jpg'
 import HFI from '../src/components/icons/HFI.jpg'
+import is8 from '../src/components/icons/is8.jpeg'
+import fortyhighalumina from '../src/components/icons/fortyhighalumina.jpeg'
+import sixtyhighalumina from '../src/components/icons/sixtyhighalumina.jpeg'
+import seventyhighalumina from '../src/components/icons/seventyhighalumina.jpeg'
+import ringsidehole from '../src/components/icons/ringsidehole.jpeg'
  export const FireBrick = [
     {
         image: image09,
@@ -35,7 +41,7 @@ import HFI from '../src/components/icons/HFI.jpg'
       },
 
       { 
-        image:image02,
+        image:sidearc,
         product:'Side Arch',
         dimensions:[
           '9x4.5/3/2.5 inches',
@@ -46,7 +52,7 @@ import HFI from '../src/components/icons/HFI.jpg'
       },
 
       { 
-        image:image03,
+        image:endarc,
         product:'End Arch',
         dimensions:[
           '9x4.5/3/2.5 inches',
@@ -71,7 +77,7 @@ import HFI from '../src/components/icons/HFI.jpg'
         ]
       },
       { 
-        image:image05,
+        image:ringsidehole,
         product:'Ring Side Hole',
         dimensions:[
           '24x3x3 inches',
@@ -97,8 +103,8 @@ import HFI from '../src/components/icons/HFI.jpg'
         ]
       },
       { 
-        image:image07,
-        product:'Split',
+        image:splitproof,
+        product:'Split Fire Proof Brick',
         dimensions:[
           '9x4.5x1 inches',
           '9x4.5x1.5 inches',
@@ -115,7 +121,7 @@ import HFI from '../src/components/icons/HFI.jpg'
         ]
       },
       { 
-        image:image08,
+        image:burnerblock,
         product:'Burner Block',
         dimensions:[
           '9x9x9 mm',
@@ -180,21 +186,21 @@ export const AcidBrick = [
 export const InsulationBrick =[
   { 
     image:insulatingbrickCard ,
-    product:'C.F.I',
+    product:'Cold Face Insulation (C.F.I)',
     dimensions:[
       '230x115x75 mm',
     ]
   },
   { 
     image:HFK ,
-    product:'H.F.K',
+    product:'Hot Face Kyanite (H.F.K)',
     dimensions:[
       '230x115x75 mm',
     ]
   },
   { 
     image:HFI,
-    product:'H.F.I',
+    product:'Hot Face Insulation (H.F.I)',
     dimensions:[
       '230x115x75 mm',
     ]
@@ -203,22 +209,29 @@ export const InsulationBrick =[
 
 export const HighAluminaBrick =[
   { 
-    image:highaluminaCard,
-    product:`Satpura Special 40% & 70% Al2O3`,
+    image:is8,
+    product:`IS 8 High Alumina Brick`,
     dimensions:[
       '230x115x75 mm',
     ]
   },
   { 
-    image:highaluminaCard,
-    product:`IS6 40% `,
+    image:fortyhighalumina,
+    product:`40% High Alumina Brick `,
     dimensions:[
       '230x115x75 mm',
     ]
   },
   { 
-    image:highaluminaCard,
-    product:` IS8 70% `,
+    image:sixtyhighalumina,
+    product:`60% High Alumina Brick`,
+    dimensions:[
+      '230x115x75 mm',
+    ]
+  },
+  { 
+    image:seventyhighalumina,
+    product:`70% High Alumina Brick`,
     dimensions:[
       '230x115x75 mm',
     ]

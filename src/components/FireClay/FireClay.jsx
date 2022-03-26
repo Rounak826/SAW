@@ -1,5 +1,6 @@
 import React from 'react'
 import {fireClay} from '../../Data';
+import fireclayImage from '../icons/fireclay.jpg'
 import ProductVariants from '../ProductVariants/ProductVariants'
 export default function FireClay() {
   return (
@@ -26,10 +27,7 @@ export default function FireClay() {
       </p>
     </div>
     <div className="KeyFeaturesCard">
-      <h4>Our Products</h4>
-      <p>Burnt Fire Clay</p>
-      <p>Unburnt Fire Clay</p>
-      <p>And Other Castables</p>
+      <img src={fireclayImage} alt="" />
     </div>
   </div>
  </div>

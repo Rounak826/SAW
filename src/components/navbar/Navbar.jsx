@@ -53,7 +53,9 @@ export default function Navbar() {
     <>
       <nav className={`${scrollPosition > 50 ? "solid" : "transparent"}`}>
         <div className="logo">
+          <Link to={'/'}>
           <img src={logo} alt="" />
+          </Link>
         </div>
 
         <div className="links">
@@ -61,7 +63,7 @@ export default function Navbar() {
           <Link style={{ color: location.pathname === '/Gallery' && scrollPosition < 50 ? '#2b3294' : "" }} to="/AboutUs">About Us</Link>
           <LinkDropDown style={{ color: location.pathname === '/Gallery' && scrollPosition < 50 ? '#2b3294' : "" }} label={"Our Products"} links={Products} />
           <Link style={{ color: location.pathname === '/Gallery' && scrollPosition < 50 ? '#2b3294' : "" }} to={'/Gallery'} >Gallery</Link>
-          <Link style={{ color: location.pathname === '/Gallery' && scrollPosition < 50 ? '#2b3294' : "#fff" }} to="/ContactUs">Contact Us</Link>
+          <Link style={{ color: location.pathname === '/Gallery' && scrollPosition < 50 ? '#2b3294' : "" }} to="/ContactUs">Contact Us</Link>
         </div>
         <div className="info">
           <div className="col">

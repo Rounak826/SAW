@@ -1,3 +1,8 @@
+:root{
+    --primary: #F24949;
+    --primary-hover:#ce4343;
+    --secondary: #E6D255;
+}
 .App{
     background-color: #f1f1f1;
     overflow: hidden;
@@ -5,31 +10,38 @@
 h1 {
     font-size: 3.5rem;
     font-weight: 600;
+    font-family: 'Roboto', sans-serif;
 }
 h2 {
     font-size: 3rem;
     font-weight: 600;
+    font-family: 'Roboto', sans-serif;
 }
 h3{
     font-size: 2.5rem;
     font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
 h4{
     font-size: 2;
     font-weight: 600;
+    font-family: 'Roboto', sans-serif;
 }
 h5{
     font-size: 1.5;
     font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
     font-size: 1.15rem;
     font-weight: 400;
     text-align: justify;
+    font-family: 'Open Sans', sans-serif;
 }
 a {
     font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
 }
 @media only screen and (max-width: 1273px) {
     h1 {
@@ -104,7 +116,7 @@ a {
     
     }
     h2 {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
         font-weight: 600;
     }
     h3{
@@ -116,16 +128,18 @@ a {
         font-weight: 600;
     }
     h5{
-        font-size: 1;
+        font-size: 1rem;
         font-weight: 400;
     }
     
     p {
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: 600;
         text-align: justify;
     }
     a {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
+        font-weight: 500;
     }
+    
 }

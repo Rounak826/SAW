@@ -29,6 +29,7 @@
     background-color: #fff;
     border-radius: 0.5rem;
     row-gap: 1rem;
+    text-align: center;
 }
 .productVariants .Card .image{
     width: 100%;
@@ -40,11 +41,11 @@
     padding: 0.4rem 1rem;
     border: none;
     border-radius: 0.5rem;
-    background-color: dodgerblue;
+    background-color: var(--primary);
     color: #fff;
 }
 .productVariants .Card button:hover{
-    background-color: rgb(28, 127, 226);
+    background-color: var(--primary-hover);
 }
 .productVariants .Card .image img{
     width: 100%;
@@ -105,10 +106,14 @@
     height: fit-content;
     background-color: #fff;
     border-radius: 1rem;
-    border: 2px solid #2b3294;
-    color: #2b3294;
+    border: 2px solid var(--primary);
+    color: var(--primary);
     font-weight: 600;
 }
+.productVariants .Overlay .menu .wrapper button:hover{
+    border: 2px solid var(--primary-hover);
+    color: var(--primary-hover);
+}   
 @media only screen and (max-width: 768px) {
     .productVariants .Overlay .menu{
         width: 90vw;
@@ -122,5 +127,9 @@
     .productVariants .wrapper{
         align-items: center;
         justify-content: center;
+    }
+    .productVariants .head{
+        text-align: center;
+        padding: 0;
     }
 }

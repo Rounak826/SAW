@@ -18,8 +18,8 @@ import maintenance from '../icons/gears.png'
 import SatpuraSlideOne from "../assets/SatpuraSlideOne.jpeg";
 import SatpuraSlideTwo from "../assets/SatpuraSlideTwo.jpeg";
 import SatpuraSlideThree from "../assets/SatpuraSlideThree.jpeg";
-import highaluminaCard from '../icons/highaluminaCard.jpeg'
-import insulatingbrickCard from '../icons/insulatingbrickCard.jpg'
+import fortyhighalumina from '../icons/fortyhighalumina.jpeg'
+import insulatingbrick from '../icons/insulationbrick.png'
 import fireclayCard from '../icons/fireclayCard.jpeg'
 import firebrick from '../icons/firebrick.jpg'
 import experience from '../icons/discuss.png'
@@ -27,6 +27,9 @@ import projects from '../icons/feedback.png'
 import analysis from '../icons/analysis.png'
 import { Link } from "react-router-dom";
 import class1 from '../icons/class1.jpeg'
+
+
+
 export default function Home() {
   const Industrylist = [
     {
@@ -40,7 +43,7 @@ export default function Home() {
       image: Rollingmill,
     },
     {
-      title: "Woden Pellet Industry",
+      title: "Iron Pellet Industry",
 
       image: Palletindustry,
     },
@@ -144,8 +147,8 @@ export default function Home() {
               <img src={analysis} alt="" />
             </div>
             <div className="info">
-              <h3>200</h3>
-              <h5>Million Bricks Supplied</h5>
+              <h3>5000 mt/year</h3>
+              <h5>Production Capacity</h5>
             </div>
 
           </div>
@@ -204,9 +207,9 @@ export default function Home() {
           </div>
           <div className="Image-Link">
             <Link to="/AluminaBrick">
-              <img src={highaluminaCard} alt="" />
+              <img src={fortyhighalumina} alt="" />
             </Link>
-            <h5>Alumina Brick</h5>
+            <h5>High Alumina Brick</h5>
           </div>
           <div className="Image-Link">
             <Link to="/FireProofBrick">
@@ -215,8 +218,8 @@ export default function Home() {
             <h5>Fire Proof Brick</h5>
           </div>
           <div className="Image-Link">
-            <Link to="/FireInsulation">
-              <img src={insulatingbrickCard} alt="" />
+            <Link to="/InsulationBrick">
+              <img src={insulatingbrick} alt="" />
             </Link>
             <h5>Insulation Brick</h5>
           </div>
@@ -251,7 +254,7 @@ export default function Home() {
           <div className="Achievement-Card">
             <img src={badge} alt="" />
             <h3>Quality Assured</h3>
-            <p>Being ISO:9001:2015 Certified,Our Facility conducts the most complex of operations efficiently and deliver an infallible quality of products</p>
+            <p>Our Facility conducts the most complex of operations efficiently and deliver an infallible quality of products</p>
           </div>
         </div>
       </div>

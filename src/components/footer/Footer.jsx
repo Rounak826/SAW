@@ -13,7 +13,7 @@ export const Footer = () => {
     },
     {
       link: "/AluminaBrick",
-      title: "Alumina Brick",
+      title: "High Alumina Brick",
     },
     {
       link: "/FireProofBrick",
@@ -25,7 +25,7 @@ export const Footer = () => {
     },
     {
       link: "/FireClay",
-      title: "Fire Clay",
+      title: "Fire Clay & Castable",
     },
     
   ];
@@ -35,7 +35,8 @@ export const Footer = () => {
         <div className="Row">
           <div className="logo">
             <img src={logo} alt="" />
-            <h4>Satpura Acid Ware & Stone Ware Pipes</h4>
+            <h4>Satpura Acid Ware</h4>
+            <p>GST: 23ABXPN6809Q1ZN </p>
           </div>
           <div className="quicklinks">
             <h3>Quick Links</h3>
@@ -77,7 +78,7 @@ export const Footer = () => {
         </div>
         <hr />
         <div className="Row">
-        <a href="https://techjain.com">Site Developed by Tech Jain IT Solutions</a>
+        <a href="https://techjain.com">Site Developed by TechJain IT Solutions</a>
         </div>
         
       </footer>

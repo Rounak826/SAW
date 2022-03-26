@@ -69,11 +69,11 @@ export default function ContactUs() {
             </h4>
             <p>
               {" "}
-            Office Address:- Nagpur Road, Opp. Devatal Ramayan Mandir, P.O. GARHA, Jabalpur 482003.
+            Office Address:- In front of devtal Ramayan Mandir Nagpur Road Jabalpur
             </p>
             <p>
               {" "}
-            Site Address:- Nagpur Road, Opp. Devatal Ramayan Mandir, P.O. GARHA, Jabalpur 482003.
+            Site Address:- Chargawan Road, Near Nanakheda Village Jabalpur
             </p>
           </div>
           <div className="ContactUs-Card-01">

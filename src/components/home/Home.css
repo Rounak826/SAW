@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.carousel-root {
+.HomeContainer .carousel-root {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -13,7 +13,7 @@
   border-radius: 0% 0% 50% 50% / 0% 0% 7% 7%;
   overflow: hidden;
 }
-.carousel-root img {
+.HomeContainer .carousel-root img {
   width: 100%;
   height: 100vh;
   border-radius: 0% 0% 50% 50% / 0% 0% 7% 7%;
@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #171c3a;
+  background-color: var(--primary);
   border-radius: 0% 0% 50% 50% / 0% 0% 7% 7%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,7 +148,7 @@
   transition: 0s;
   letter-spacing: 1px;
   text-decoration: none;
-  background-color: #fe5c24;
+  background-color: var(--primary);
   
 }
 .btn-1:hover {
@@ -180,7 +180,6 @@
 }
 .Intro-Mod{
   color: #fe5c24;
-  font-size: 1.15rem;
 }
 .ProductContainer{
   width: 50%;
@@ -201,7 +200,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  background-color: #171c3a;
+  background-color: var(--primary);
   color: #fff;
   padding: 0.8rem;
   border-radius: 1rem;
@@ -233,7 +232,7 @@
 }
 .Home-AboutUs-Intro-Button {
   width: fit-content;
-  background-color: #191d34;
+  background-color: var(--primary);
   border: none;
   color: #ffffff;
   padding: 0.5rem 1rem;
@@ -243,12 +242,11 @@
   font-size: 1.2rem;
   margin: 4px 2px;
   cursor: pointer;
-  border: 2px solid black;
   border-radius: 0.5rem;
   transition: 0s;
 }
 .Home-AboutUs-Intro-Button:hover {
-  background-color: #fe5c24;
+  background-color: var(--primary-hover);
   color: white;
   border: none;
 }
@@ -260,7 +258,7 @@
   justify-content: space-between;
   align-items: stretch;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  background-color: #191d34;
+  background-color: white;
   color: white;
   margin: 5rem 2rem;
   padding: 4rem 1rem;
@@ -291,7 +289,7 @@
 .Home-Our-Products-Content h2 {
   line-height: 1;
   text-transform: uppercase;
-  color: #fff;
+  color: #1e1e1e;
   margin-bottom: 0px;
   margin-top: 28px;
 }
@@ -299,13 +297,14 @@
   width: 80%;
   text-align: justify;
   margin-bottom: 0.5rem;
+  color: #1e1e1e;
 }
 .Home-OurProducts-Category-ProductCard01 {
   color: #fe5c24;
 }
 .OurProducts-btn01 {
   display: inline-block;
-  padding: 18px 60px;
+  padding: 1rem 2rem;
   border-radius: 50px;
   font-size: 16px;
   color: #fff;
@@ -313,21 +312,21 @@
   margin-top: 45px;
   -webkit-transition: 0.5s;
   transition: 0s;
-  background-color: #fe5c24;
+  background-color: var(--primary);
   font-weight: 500;
   letter-spacing: 1px;
   text-decoration: none;
 }
 .OurProducts-btn01:hover {
-  color: #fe5c24;
-  background-color: white;
+  color: white;
+  background-color: var(--primary-hover);
 }
 .Home-AboutUs-Intro h2 {
   width: 80%;
   word-wrap: break-word;
 }
 .Mods {
-  color: #fe5c24;
+  color: var(--secondary);
 }
 .Home-AboutUs-Intro p {
   width: 85%;
@@ -377,7 +376,7 @@
   bottom: -16px;
   width: 80px;
   height: 3px;
-  background-color: #fe5c24;
+  background-color: var(--secondary);
   align-items: center;
 }
 .OurClient-Parent{
@@ -426,7 +425,7 @@
   bottom: -16px;
   width: 80px;
   height: 2px;
-  background-color: #fe5c24;
+  background-color: var(--secondary);
   align-items: center;
 }
 .Achievement-Card p{
@@ -470,7 +469,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 6rem;
+  margin-bottom: 0rem;
 }
 .Deal-Products-Images>:first-child{
   margin-left: 2rem;
@@ -579,7 +578,7 @@ margin-right: 2rem;
    }
    .Home-AboutUs-Intro p{
      width: 100%;
-     margin-top: 2rem;
+     margin-top: 0.5rem;
    }
    .Home-AboutUs-Intro-Button{
      width: 50%;
@@ -602,8 +601,8 @@ margin-right: 2rem;
      width: 100%;
      font-size: 2.5rem;
      margin-top: 0%;
-     margin-bottom: 2rem;
-     text-align: left;
+     margin-bottom: 0rem;
+     text-align: center;
    }
    .Home-Our-Products-Content p{
      width: 100%;
@@ -627,12 +626,45 @@ margin-right: 2rem;
    }
 
  }
+ @media only screen 
+and (max-device-width : 768px) 
+and (orientation : landscape) {
+  
+  .banner-part{
+    height: 120vh;
+    gap: 1rem;
+  }
+  .banner-Text-inner{
+    height: 100%;
+    margin-top: 8rem;
+    gap: 1rem;
+  }
+  .banner-part:after {
+    height: 120vh;
+  }
+  .banner-Text-inner h5{
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .banner-Text-inner h1{
+    margin: 0;
+  }
+  .banner-Text h3{
+    margin:0;
+  }
+  .banner-Text .btn-1{
+    margin-top: 0rem;
+    margin: 0;
+    padding: 0.4rem 1rem;
+  }
+}
  @media (max-width: 768px){
   .Home-OurProducts{
     flex-direction: column;
     row-gap: 2rem;
     align-items: center;
     justify-content: center;
+    margin: 1rem 2rem;
   }
   .Home-Our-Products-Content{
     width: 90%;
@@ -646,14 +678,20 @@ margin-right: 2rem;
   .OurProducts-btn01{
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
+    margin: auto;
+  }
+  .Achievements{
+    margin: 0;
   }
   .Achievement-Parent{
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
     
   }
   .Achievement-Card{
     width: 50%;
+    padding: 0 1rem;
   }
  }
 
@@ -677,6 +715,12 @@ margin-right: 2rem;
   }
   .banner-Text-inner h5{
     margin-bottom: 0rem;
+  }
+  .Deal-Header{
+    margin-bottom: 0rem;
+  }
+  .OurClient{
+    gap: 0rem;
   }
 }
  @media (max-width: 430px){
@@ -718,6 +762,7 @@ margin-right: 2rem;
    .Home-Our-Products-Content h2{
      width: 100%;
      padding: 1rem;
+     margin-bottom: 0;
    }
    .Home-Our-Products-Content p{
      width: 100%;
@@ -750,7 +795,7 @@ margin-right: 2rem;
      display: grid;
      grid-template-columns: 90%;
      justify-content: center;
-     grid-row-gap: 2rem;
+     grid-row-gap: 0rem;
    }
    .Deal-Products-Images{
     display: flex;
@@ -798,6 +843,9 @@ margin-right: 2rem;
    .Deal-Products-Images>:last-child{
      margin-right: 0%;
    }
+   .Home-OurProducts{
+     margin: 1rem 2rem;
+   }
    .Home-OurProduct-Image{
      margin-top: 2rem;
      width: 100%;
@@ -810,5 +858,6 @@ margin-right: 2rem;
    }
    .OurProducts-btn01{
      padding: 10px 30px;
+     margin-top: 1rem;
    }
  }

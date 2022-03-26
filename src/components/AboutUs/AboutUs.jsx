@@ -136,7 +136,7 @@ export default function AboutUs() {
         <div className="Mission">
           <h1>
             {" "}
-            <img src={Info} alt="" /> Mission
+             Mission
           </h1>
           <p>
           To become a Total Refractory Solutions Company by providing a comprehensive range of products and provide highest quality products & customer service. Strive to become a Technology and Market leader in the world. Be a leader in refractories and ceramics through continuous innovation, up gradation of product quality, introduction of new products and expansion of markets. Providing promising career and personal development opportunities to all employees. Achieve fair returns on capital employed by promoting productivity in all activities
@@ -145,7 +145,7 @@ export default function AboutUs() {
         <div className="Vision">
           <h1>
             {" "}
-            <img src={Info} alt="" /> Vision
+            Vision
           </h1>
           <p>
           Our aim is to provide timely supply and service after sale. We are very focused on quality, customer satisfaction and value for money. Our business philosophy dictates that we develop long-term relationship with the people we deal with.

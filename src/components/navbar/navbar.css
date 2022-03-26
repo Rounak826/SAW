@@ -25,32 +25,32 @@ nav .info{
   width: max-content;
   padding: 0.6rem 1rem;
   border-radius:0.6rem;
-  background-color: #fe5c24;
+  background-color: var(--primary);
   color: white !important;
   transition: all 0.3s ease;
-  color: #fe5c24;
+  color: var(--primary);
   padding: 0.6rem 1rem !important;
 }
 .transparent .Quote-Btn-1:hover{
   border: none;
   background-color: white;
-  color: #fe5c24 !important;
+  color: var(--primary) !important;
 
 }
 .solid .Quote-Btn-1{
   width: max-content;
   padding: 0.6rem 1rem;
-  border: 1px solid #fe5c24;
+  border: 2px solid var(--primary);
   border-radius: 0.6rem;
   background-color: white;
-  color: #fe5c24;
+  color: var(--primary);
   transition: all 0.3s ease;
   padding: 0.6rem 1rem !important;
 }
 .solid .Quote-Btn-1:hover{
-  border: none;
-  background-color: #fe5c24;
-  color: white;
+  background-color: var(--primary);
+  border: solid 2px #fff;
+  color: #fff;
 }
 nav .info .col{
   width: fit-content;
@@ -91,7 +91,7 @@ nav p{
     border: 1px solid rgba(209, 213, 219, 0.3);
 }
 .solid{
-    background-color: #191D34;
+    background-color: var(--primary);
 }
 nav .logo{
     display: flex;
@@ -102,13 +102,19 @@ nav .logo{
     width: 10%;
     min-width: 50px;
 }
+nav .logo a{
+  padding: 0;
+}
+nav .logo a:hover{
+  border: none;
+}
 nav .logo h1{
   width: 60%;
   color: #B82883;
   margin: 0;
 }
 nav .logo span{
-  color:#0949B2;
+  color:var(--secondary);
   margin: 0;
 }
 nav .logo img{
@@ -140,8 +146,8 @@ nav .links{
     font-weight: 600;
 }
 .solid a:hover{
-  color: #ff875f;
-  border-bottom: solid 3px #fe5c24;
+  color: var(--secondary);
+  border-bottom: solid 3px var(--secondary);
 }
  .transparent a{
   padding: 0.6rem 1rem;
@@ -310,6 +316,7 @@ nav .links{
   .sideBar .info{
     display: flex;
   }
+  
 }
 .flex{
   display: flex;
@@ -377,5 +384,15 @@ nav .links{
 @media only screen and (max-width: 1196px) {
   .btn-primary{
     padding: 0.6rem 1rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .sideBar .bar{
+    width: 70vw;
+    height: 100vh;
+  }
+  .sideBar .empty{
+    width: 30vw;
+    height: 100vh;
   }
 }

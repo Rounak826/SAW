@@ -76,16 +76,16 @@ export default function AcidProofBrick() {
             <div className="WaterResistant-Row-Card-Content">
             <h2>Class II</h2>
             <p>
-              <Check /> Water Absorption &#60; 1%
+              <Check /> Water Absorption &#60; 4%
             </p>
             <p>
-              <Check /> Cold Crushing Strength (C.C.S) &#62; 750 kg/cm sq
+              <Check /> Cold Crushing Strength (C.C.S) &#62; 600 kg/cm sq
             </p>
             <p>
-              <Check /> Modulus Of Rupture &#62; 175 kg/cm sq
+              <Check /> Modulus Of Rupture &#62; 90 kg/cm sq
             </p>
             <p>
-              <Check /> Acid Resistant &#60; 1 %
+              <Check /> Acid Resistant &#60; 4 %
             </p>
             </div>
            <div className="WaterResistant-Row-Card-Image">
@@ -99,15 +99,15 @@ export default function AcidProofBrick() {
         <div className="Application-Parent">
           <div className="Area-Card">
             <img src={chimney} alt="" />
-            <h3>Chimney of Thermal Power Plants</h3>
+            <h4>Chimney of Thermal Power Plants</h4>
           </div>
           <div className="Area-Card">
             <img src={AcidStorageTank} alt="" />
-            <h3>Acid Storage Tank</h3>
+            <h4>Acid Storage Tank</h4>
           </div>
           <div className="Area-Card">
             <img src={ARFloor } alt="" />
-            <h3>Floor</h3>
+            <h4>Floor</h4>
           </div>
         </div>
       </div>
