@@ -8,7 +8,7 @@ export default function ContactUs() {
   const HandleSubmit = (e) => {
     setLoading(true);
     e.preventDefault();
-    const scriptURL = `https://v1.nocodeapi.com/tejas001/google_sheets/xhkmsXbsrKKAgzxy?tabId=Sheet1`;
+    const scriptURL = `https://v1.nocodeapi.com/satpuraacidware/google_sheets/HeWLYxihBdchvAjV?tabId=Sheet1`;
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     const form = document.forms['ContactUs']

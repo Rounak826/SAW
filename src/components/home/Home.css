@@ -208,6 +208,7 @@
 }
 .ProductContainer .counter h3{
   width: 100%;
+  font-size: 2.2rem;
 }
 .ProductContainer .counter h5{
   width: 100%;
@@ -548,6 +549,9 @@ margin-right: 2rem;
  }
 }
  @media (max-width:780px){
+  .ProductContainer .counter h3{
+    font-size: 1.8rem;
+  }
    .Home-Our-Products-Content{
      padding-left: 0rem;
    }
@@ -709,6 +713,9 @@ and (orientation : landscape) {
  
  }
  @media (max-width:476px){
+  .ProductContainer .counter h3{
+    font-size: 1.6rem;
+  }
   .banner-Text-inner{
     padding: 0.8rem 1rem;
     margin-top: 5rem;

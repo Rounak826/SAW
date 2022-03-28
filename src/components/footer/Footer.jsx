@@ -45,14 +45,15 @@ export const Footer = () => {
                 <Link to={"/"}>Home</Link>
               </li>
               <li>
+                <Link to={"/AboutUs"}>About Us</Link>
+              </li>
+              <li>
               <LinkDropDown label={"Our Products"} links={Products} />
               </li>
               <li>
                 <Link to={"/Gallery"}>Gallery</Link>
               </li>
-              <li>
-                <Link to={"/AboutUs"}>About Us</Link>
-              </li>
+             
               <li>
                 <Link to={"/ContactUs"}>Contact Us</Link>
               </li>

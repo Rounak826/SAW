@@ -101,7 +101,7 @@
   gap: 1.8rem;
 }
 .ContactUs-Form input {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -111,13 +111,14 @@
 
 }
 .ContactUs-Form textarea {
-  width: 90%;
+  width: 100%;
   border-radius: 10px;
   padding: 1.5rem;
   resize: none;
 }
 .ContactUs .ContactUs-Form .Form .ContactUs-Button {
-  width: 30%;
+  width: fit-content;
+  align-self: center;
   margin: 1rem;
   padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
@@ -131,8 +132,10 @@
   border: none;
 }
 .ContactUs .ContactUs-Form .Form h1 {
-  margin: 1rem;
+  margin: 1rem 0;
   color: #fe5c24;
+  text-align: center;
+  padding: 0;
 }
 .ContactUs-Map {
   width: 40%;
@@ -186,13 +189,19 @@
       padding: 1rem;
   }
   .ContactUs .ContactUs-Form .Form .ContactUs-Button{
-      width: 40%;
       margin: 0.5rem;
       padding: 1rem;
   }
   .Form form{
     align-items: center;
   }
+  .ContactUs-Form input{
+    width: 60%;
+  }
+  .ContactUs-Form textarea{
+    width: 60%;
+  }
+
 }
 @media only screen and (max-width: 780px){
   .ContactUs-Cards{
@@ -209,13 +218,19 @@
     margin-top: 2rem;
   }
   .ContactUs .ContactUs-Form .Form .ContactUs-Button{
-    width: 50%;
+    width: 80%;
   }
   .ContactUs .ContactUs-Form .Form h1{
     width: 100%;
     margin: 0;
     margin-bottom: 2rem;
     text-align: center;
+  }
+  .ContactUs-Form input{
+    width: 80%;
+  }
+  .ContactUs-Form textarea{
+    width: 80%;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -239,7 +254,21 @@
     width: 100%;
   }
   .ContactUs .ContactUs-Form .Form .ContactUs-Button{
-    width: 100%;
+    width: 90%;
   }
+  .Form{
+    margin: 0;
+    padding: 0;
+  }
+  .Form form{
+   width: 100%;
+  }
+  .ContactUs-Form input{
+    width: 90%;
+  }
+  .ContactUs-Form textarea{
+    width: 90%;
+  }
+
 
 }
